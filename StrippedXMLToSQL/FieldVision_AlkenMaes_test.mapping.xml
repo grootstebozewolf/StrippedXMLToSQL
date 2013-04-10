@@ -1,0 +1,1660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="FieldVision_AlkenMaes_test" xmlns="http://schemas.microsoft.com/linqtosql/mapping/2007">
+  <Table Name="dbo.fv_activity" Member="Fv_activity">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_activity">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="planstartdt" Member="Planstartdt" Storage="_Planstartdt" DbType="DateTime" />
+      <Column Name="planenddt" Member="Planenddt" Storage="_Planenddt" DbType="DateTime" />
+      <Column Name="criteriumstartdt" Member="Criteriumstartdt" Storage="_Criteriumstartdt" DbType="DateTime" />
+      <Column Name="criteriumenddt" Member="Criteriumenddt" Storage="_Criteriumenddt" DbType="DateTime" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="name" Member="Name" Storage="_Name" DbType="VarChar(50)" />
+      <Column Name="contact" Member="Contact" Storage="_Contact" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(10)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="VarChar(50)" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(15)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="customerexternal_id" Member="Customerexternal_id" Storage="_Customerexternal_id" DbType="VarChar(50)" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int NOT NULL" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="serviceorder_id" Member="Serviceorder_id" Storage="_Serviceorder_id" DbType="UniqueIdentifier NOT NULL" />
+      <Column Name="activitytype_id" Member="Activitytype_id" Storage="_Activitytype_id" DbType="Int" />
+      <Column Name="causecode_id" Member="Causecode_id" Storage="_Causecode_id" DbType="Int" />
+      <Column Name="problemcode_id" Member="Problemcode_id" Storage="_Problemcode_id" DbType="Int" />
+      <Column Name="solutioncode_id" Member="Solutioncode_id" Storage="_Solutioncode_id" DbType="Int" />
+      <Column Name="capability_id" Member="Capability_id" Storage="_Capability_id" DbType="Int" />
+      <Column Name="serviceobject_id" Member="Serviceobject_id" Storage="_Serviceobject_id" DbType="Int" />
+      <Column Name="contract_id" Member="Contract_id" Storage="_Contract_id" DbType="Int" />
+      <Column Name="priority_id" Member="Priority_id" Storage="_Priority_id" DbType="Int" />
+      <Column Name="seen_by_eng" Member="Seen_by_eng" Storage="_Seen_by_eng" DbType="Int" />
+      <Column Name="maxstatusdt" Member="Maxstatusdt" Storage="_Maxstatusdt" DbType="DateTime" />
+      <Column Name="activitystatustype_id" Member="Activitystatustype_id" Storage="_Activitystatustype_id" DbType="Int" />
+      <Column Name="showrenewcontract" Member="Showrenewcontract" Storage="_Showrenewcontract" DbType="Int" />
+      <Column Name="operationslist_id" Member="Operationslist_id" Storage="_Operationslist_id" DbType="Int" />
+      <Column Name="duration" Member="Duration" Storage="_Duration" DbType="DateTime" />
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+      <Column Name="sub_id" Member="Sub_id" Storage="_Sub_id" DbType="Int" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="changedt" Member="Changedt" Storage="_Changedt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activityflow" Member="Fv_activityflow">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_activityflow">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="activitytype_id" Member="Activitytype_id" Storage="_Activitytype_id" DbType="Int" />
+      <Column Name="stepnumber" Member="Stepnumber" Storage="_Stepnumber" DbType="Int" />
+      <Column Name="fromlocation_id" Member="Fromlocation_id" Storage="_Fromlocation_id" DbType="Int" />
+      <Column Name="tolocation_id" Member="Tolocation_id" Storage="_Tolocation_id" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activitylabour" Member="Fv_activitylabour">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_activitylabour">
+      <Column Name="activitystatustype_id" Member="Activitystatustype_id" Storage="_Activitystatustype_id" DbType="Int" />
+      <Column Name="labourstatustype_id" Member="Labourstatustype_id" Storage="_Labourstatustype_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activityremark" Member="Fv_activityremark">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_activityremark">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="remark_id" Member="Remark_id" Storage="_Remark_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activitystatus" Member="Fv_activitystatus">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_activitystatus">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="statusdt" Member="Statusdt" Storage="_Statusdt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="activitystatustype_id" Member="Activitystatustype_id" Storage="_Activitystatustype_id" DbType="Int" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="owner_id" Member="Owner_id" Storage="_Owner_id" DbType="Int" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="exported" Member="Exported" Storage="_Exported" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="exporteddt" Member="Exporteddt" Storage="_Exporteddt" DbType="DateTime" />
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activitystatusdirection" Member="Fv_activitystatusdirection">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_activitystatusdirection">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="from_activitystatustype_id" Member="From_activitystatustype_id" Storage="_From_activitystatustype_id" DbType="Int NOT NULL" />
+      <Column Name="to_activitystatustype_id" Member="To_activitystatustype_id" Storage="_To_activitystatustype_id" DbType="Int NOT NULL" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="Char(50)" />
+      <Column Name="allow_eng_chg" Member="Allow_eng_chg" Storage="_Allow_eng_chg" DbType="Int" />
+      <Column Name="new_activity" Member="New_activity" Storage="_New_activity" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activitystatustype" Member="Fv_activitystatustype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_activitystatustype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="color" Member="Color" Storage="_Color" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activitytype" Member="Fv_activitytype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_activitytype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="duration" Member="Duration" Storage="_Duration" DbType="Real" />
+      <Column Name="responsetime" Member="Responsetime" Storage="_Responsetime" DbType="Real" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="billable" Member="Billable" Storage="_Billable" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="color" Member="Color" Storage="_Color" DbType="VarChar(50)" />
+      <Column Name="overhead" Member="Overhead" Storage="_Overhead" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_agendastatustype" Member="Fv_agendastatustype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_agendastatustype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="duration" Member="Duration" Storage="_Duration" DbType="Real" />
+      <Column Name="responsetime" Member="Responsetime" Storage="_Responsetime" DbType="Real" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_av_assignments" Member="Fv_av_assignments">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_av_assignments">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="schedule_id" Member="Schedule_id" Storage="_Schedule_id" DbType="Int NOT NULL" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int NOT NULL" />
+      <Column Name="start_d" Member="Start_d" Storage="_Start_d" DbType="SmallDateTime NOT NULL" />
+      <Column Name="end_d" Member="End_d" Storage="_End_d" DbType="SmallDateTime NOT NULL" />
+      <Column Name="remark" Member="Remark" Storage="_Remark" DbType="VarChar(1000)" />
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int NOT NULL" />
+      <Column Name="insert_id" Member="Insert_id" Storage="_Insert_id" DbType="Int" />
+      <Column Name="insert_dt" Member="Insert_dt" Storage="_Insert_dt" DbType="DateTime NOT NULL" />
+      <Column Name="number_of_calendar_items" Member="Number_of_calendar_items" Storage="_Number_of_calendar_items" DbType="Int NOT NULL" />
+      <Association Name="fk_av_assignment_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_av_assignments_fv_av_schedules" Member="Fv_av_schedules" Storage="_Fv_av_schedules" ThisKey="Schedule_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_av_assignments_fv_planner" Member="Fv_planner" Storage="_Fv_planner" ThisKey="Planner_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_av_calendar_fv_av_assignments" Member="Fv_av_calendar" Storage="_Fv_av_calendar" ThisKey="Id" OtherKey="Assignment_id" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_av_calendar" Member="Fv_av_calendar">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_av_calendar">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="schedule_id" Member="Schedule_id" Storage="_Schedule_id" DbType="Int NOT NULL" />
+      <Column Name="schedule_item_id" Member="Schedule_item_id" Storage="_Schedule_item_id" DbType="Int NOT NULL" />
+      <Column Name="assignment_id" Member="Assignment_id" Storage="_Assignment_id" DbType="Int NOT NULL" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int NOT NULL" />
+      <Column Name="start_dt" Member="Start_dt" Storage="_Start_dt" DbType="DateTime NOT NULL" />
+      <Column Name="end_dt" Member="End_dt" Storage="_End_dt" DbType="DateTime NOT NULL" />
+      <Column Name="timespending" Member="Timespending" Storage="_Timespending" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="is_available" Member="Is_available" Storage="_Is_available" DbType="Int NOT NULL" />
+      <Column Name="color" Member="Color" Storage="_Color" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="overrules_specialday" Member="Overrules_specialday" Storage="_Overrules_specialday" DbType="Int" />
+      <Column Name="remark" Member="Remark" Storage="_Remark" DbType="VarChar(1000)" />
+      <Association Name="FK_fv_av_calendar_fv_av_assignments" Member="Fv_av_assignments" Storage="_Fv_av_assignments" ThisKey="Assignment_id" OtherKey="Id" DeleteOnNull="true" IsForeignKey="true" />
+      <Association Name="FK_fv_av_calendar_fv_av_schedule_items" Member="Fv_av_schedule_items" Storage="_Fv_av_schedule_items" ThisKey="Schedule_item_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_av_calendar_fv_av_schedules" Member="Fv_av_schedules" Storage="_Fv_av_schedules" ThisKey="Schedule_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_av_calendar_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_av_engineer_specialdays" Member="Fv_av_engineer_specialdays">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_av_engineer_specialdays">
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="specialday_id" Member="Specialday_id" Storage="_Specialday_id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Association Name="FK_fv_av_engineer_specialdays_fv_av_specialdays" Member="Fv_av_specialdays" Storage="_Fv_av_specialdays" ThisKey="Specialday_id" OtherKey="Id" DeleteOnNull="true" IsForeignKey="true" />
+      <Association Name="FK_fv_av_engineer_specialdays_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" DeleteOnNull="true" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_av_schedule_items" Member="Fv_av_schedule_items">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_av_schedule_items">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="schedule_id" Member="Schedule_id" Storage="_Schedule_id" DbType="Int NOT NULL" />
+      <Column Name="day_number" Member="Day_number" Storage="_Day_number" DbType="Int NOT NULL" />
+      <Column Name="start_tm" Member="Start_tm" Storage="_Start_tm" DbType="DateTime NOT NULL" />
+      <Column Name="end_tm" Member="End_tm" Storage="_End_tm" DbType="DateTime NOT NULL" />
+      <Column Name="timespending_id" Member="Timespending_id" Storage="_Timespending_id" DbType="Int NOT NULL" />
+      <Column Name="overrules_specialday" Member="Overrules_specialday" Storage="_Overrules_specialday" DbType="Int NOT NULL" />
+      <Column Name="remark" Member="Remark" Storage="_Remark" DbType="VarChar(1000)" />
+      <Association Name="FK_fv_av_calendar_fv_av_schedule_items" Member="Fv_av_calendar" Storage="_Fv_av_calendar" ThisKey="Id" OtherKey="Schedule_item_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_av_schedule_items_fv_av_schedule_types" Member="Fv_av_timespendings" Storage="_Fv_av_timespendings" ThisKey="Timespending_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_av_schedule_items_fv_av_schedules" Member="Fv_av_schedules" Storage="_Fv_av_schedules" ThisKey="Schedule_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_av_schedules" Member="Fv_av_schedules">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_av_schedules">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="name" Member="Name" Storage="_Name" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(1000)" />
+      <Column Name="window_days" Member="Window_days" Storage="_Window_days" DbType="Int NOT NULL" />
+      <Column Name="window_in_weekdays" Member="Window_in_weekdays" Storage="_Window_in_weekdays" DbType="Int NOT NULL" />
+      <Column Name="is_active" Member="Is_active" Storage="_Is_active" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_av_assignments_fv_av_schedules" Member="Fv_av_assignments" Storage="_Fv_av_assignments" ThisKey="Id" OtherKey="Schedule_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_av_calendar_fv_av_schedules" Member="Fv_av_calendar" Storage="_Fv_av_calendar" ThisKey="Id" OtherKey="Schedule_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_av_schedule_items_fv_av_schedules" Member="Fv_av_schedule_items" Storage="_Fv_av_schedule_items" ThisKey="Id" OtherKey="Schedule_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_av_specialdays" Member="Fv_av_specialdays">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_av_specialdays">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="calendar_dt" Member="Calendar_dt" Storage="_Calendar_dt" DbType="DateTime NOT NULL" />
+      <Column Name="name" Member="Name" Storage="_Name" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(1000)" />
+      <Column Name="start_tm" Member="Start_tm" Storage="_Start_tm" DbType="Float NOT NULL" />
+      <Column Name="end_tm" Member="End_tm" Storage="_End_tm" DbType="Float NOT NULL" />
+      <Column Name="color" Member="Color" Storage="_Color" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="is_available" Member="Is_available" Storage="_Is_available" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_av_engineer_specialdays_fv_av_specialdays" Member="Fv_av_engineer_specialdays" Storage="_Fv_av_engineer_specialdays" ThisKey="Id" OtherKey="Specialday_id" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_av_timespendings" Member="Fv_av_timespendings">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_av_timespendings">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="name" Member="Name" Storage="_Name" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(1000)" />
+      <Column Name="color" Member="Color" Storage="_Color" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="is_available" Member="Is_available" Storage="_Is_available" DbType="Int NOT NULL" />
+      <Column Name="is_active" Member="Is_active" Storage="_Is_active" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_av_schedule_items_fv_av_schedule_types" Member="Fv_av_schedule_items" Storage="_Fv_av_schedule_items" ThisKey="Id" OtherKey="Timespending_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_barrel" Member="Fv_barrel">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_barrel">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_capability" Member="Fv_capability">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_capability">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_causecode" Member="Fv_causecode">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_causecode">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="problemcode_id" Member="Problemcode_id" Storage="_Problemcode_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_color" Member="Fv_color">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_color">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="Char(32)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="Char(10)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="Char(10)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_commclienterror" Member="Fv_commclienterror">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_commclienterror">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime NOT NULL" />
+      <Column Name="messageid" Member="Messageid" Storage="_Messageid" DbType="VarChar(100)" />
+      <Column Name="retry" Member="Retry" Storage="_Retry" DbType="Int NOT NULL" />
+      <Column Name="body" Member="Body" Storage="_Body" DbType="Text" UpdateCheck="Never" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="remoteid" Member="Remoteid" Storage="_Remoteid" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_commengdata" Member="Fv_commengdata">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_commengdata">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="TableName" Member="TableName" Storage="_TableName" DbType="VarChar(50)" />
+      <Column Name="commengdata_id" Member="Commengdata_id" Storage="_Commengdata_id" DbType="Int" />
+      <Column Name="lookupcolumn" Member="Lookupcolumn" Storage="_Lookupcolumn" DbType="Char(10)" />
+      <Column Name="refcolumn" Member="Refcolumn" Storage="_Refcolumn" DbType="Char(10)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_commfield" Member="Fv_commfield">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_commfield">
+      <Column Name="TableID" Member="TableID" Storage="_TableID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="FieldID" Member="FieldID" Storage="_FieldID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="FieldName" Member="FieldName" Storage="_FieldName" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FieldType" Member="FieldType" Storage="_FieldType" DbType="Int NOT NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_commsendwith" Member="Fv_commsendwith">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_commsendwith">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="TableIDmain" Member="TableIDmain" Storage="_TableIDmain" DbType="Int" />
+      <Column Name="FieldMain" Member="FieldMain" Storage="_FieldMain" DbType="VarChar(200)" />
+      <Column Name="TableIDsub" Member="TableIDsub" Storage="_TableIDsub" DbType="Int" />
+      <Column Name="FieldSub" Member="FieldSub" Storage="_FieldSub" DbType="VarChar(200)" />
+      <Column Name="AddQuery" Member="AddQuery" Storage="_AddQuery" DbType="VarChar(255)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_commtable" Member="Fv_commtable">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_commtable">
+      <Column Name="TableID" Member="TableID" Storage="_TableID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="TableName" Member="TableName" Storage="_TableName" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sendwithactivity" Member="Sendwithactivity" Storage="_Sendwithactivity" DbType="VarChar(4000)" />
+      <Column Name="sendwithserviceorder" Member="Sendwithserviceorder" Storage="_Sendwithserviceorder" DbType="VarChar(4000)" />
+      <Column Name="sendwithcustomer" Member="Sendwithcustomer" Storage="_Sendwithcustomer" DbType="VarChar(4000)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_contract" Member="Fv_contract">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_contract">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="startdt" Member="Startdt" Storage="_Startdt" DbType="DateTime" />
+      <Column Name="enddt" Member="Enddt" Storage="_Enddt" DbType="DateTime" />
+      <Column Name="installationdt" Member="Installationdt" Storage="_Installationdt" DbType="DateTime" />
+      <Column Name="warranty" Member="Warranty" Storage="_Warranty" DbType="Int" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="serviceobject_id" Member="Serviceobject_id" Storage="_Serviceobject_id" DbType="Int" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int" />
+      <Column Name="contracttype_id" Member="Contracttype_id" Storage="_Contracttype_id" DbType="Int" />
+      <Column Name="maintenancedt" Member="Maintenancedt" Storage="_Maintenancedt" DbType="DateTime" />
+      <Column Name="prevmaintenancedt" Member="Prevmaintenancedt" Storage="_Prevmaintenancedt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_contracttype" Member="Fv_contracttype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_contracttype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int NOT NULL" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_controller" Member="Fv_controller">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_controller">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="username" Member="Username" Storage="_Username" DbType="VarChar(50)" />
+      <Column Name="password" Member="Password" Storage="_Password" DbType="VarChar(50)" />
+      <Column Name="firstname" Member="Firstname" Storage="_Firstname" DbType="VarChar(50)" />
+      <Column Name="presurname" Member="Presurname" Storage="_Presurname" DbType="VarChar(20)" />
+      <Column Name="surname" Member="Surname" Storage="_Surname" DbType="VarChar(50)" />
+      <Column Name="initials" Member="Initials" Storage="_Initials" DbType="VarChar(10)" />
+      <Column Name="title" Member="Title" Storage="_Title" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(15)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_createfield" Member="Fv_createfield">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_createfield">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="createtable_id" Member="Createtable_id" Storage="_Createtable_id" DbType="Int NOT NULL" />
+      <Column Name="FieldName" Member="FieldName" Storage="_FieldName" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="indexed" Member="Indexed" Storage="_Indexed" DbType="Bit NOT NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_createjointindex" Member="Fv_createjointindex">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_createjointindex">
+      <Column Name="indexnumber" Member="Indexnumber" Storage="_Indexnumber" DbType="Int NOT NULL" />
+      <Column Name="createtable_id" Member="Createtable_id" Storage="_Createtable_id" DbType="Int NOT NULL" />
+      <Column Name="createfield_id" Member="Createfield_id" Storage="_Createfield_id" DbType="Int NOT NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_createtable" Member="Fv_createtable">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_createtable">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="TableName" Member="TableName" Storage="_TableName" DbType="VarChar(50)" />
+      <Column Name="Fill" Member="Fill" Storage="_Fill" DbType="Bit NOT NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_currency" Member="Fv_currency">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_currency">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="symbol" Member="Symbol" Storage="_Symbol" DbType="VarChar(10)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_customer" Member="Fv_customer">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_customer">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="relationnumber" Member="Relationnumber" Storage="_Relationnumber" DbType="VarChar(40)" />
+      <Column Name="customername" Member="Customername" Storage="_Customername" DbType="VarChar(50)" />
+      <Column Name="contactfirstname" Member="Contactfirstname" Storage="_Contactfirstname" DbType="VarChar(50)" />
+      <Column Name="contactpresurname" Member="Contactpresurname" Storage="_Contactpresurname" DbType="VarChar(20)" />
+      <Column Name="contactsurname" Member="Contactsurname" Storage="_Contactsurname" DbType="VarChar(50)" />
+      <Column Name="contactinitials" Member="Contactinitials" Storage="_Contactinitials" DbType="VarChar(10)" />
+      <Column Name="contacttitle" Member="Contacttitle" Storage="_Contacttitle" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(10)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="VarChar(50)" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(15)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="notesextra" Member="Notesextra" Storage="_Notesextra" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="customertype_id" Member="Customertype_id" Storage="_Customertype_id" DbType="Int" />
+      <Column Name="representative" Member="Representative" Storage="_Representative" DbType="VarChar(50)" />
+      <Column Name="closed" Member="Closed" Storage="_Closed" DbType="VarChar(50)" />
+      <Column Name="endday" Member="Endday" Storage="_Endday" DbType="VarChar(50)" />
+      <Column Name="brand" Member="Brand" Storage="_Brand" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_customeravailability" Member="Fv_customeravailability">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_customeravailability">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int" />
+      <Column Name="day_id" Member="Day_id" Storage="_Day_id" DbType="Int" />
+      <Column Name="starttime" Member="Starttime" Storage="_Starttime" DbType="DateTime" />
+      <Column Name="endtime" Member="Endtime" Storage="_Endtime" DbType="DateTime" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_customerserviceemployee" Member="Fv_customerserviceemployee">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_customerserviceemployee">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="username" Member="Username" Storage="_Username" DbType="VarChar(50)" />
+      <Column Name="password" Member="Password" Storage="_Password" DbType="VarChar(50)" />
+      <Column Name="firstname" Member="Firstname" Storage="_Firstname" DbType="VarChar(50)" />
+      <Column Name="presurname" Member="Presurname" Storage="_Presurname" DbType="VarChar(20)" />
+      <Column Name="surname" Member="Surname" Storage="_Surname" DbType="VarChar(50)" />
+      <Column Name="initials" Member="Initials" Storage="_Initials" DbType="VarChar(10)" />
+      <Column Name="title" Member="Title" Storage="_Title" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(15)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="customerservicegroup_id" Member="Customerservicegroup_id" Storage="_Customerservicegroup_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_customerservicegroup" Member="Fv_customerservicegroup">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_customerservicegroup">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_customertype" Member="Fv_customertype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_customertype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Char(10) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_day" Member="Fv_day">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_day">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_debrief" Member="Fv_debrief">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_debrief">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="ticker" Member="Ticker" Storage="_Ticker" DbType="Decimal(18,3)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="engnotes" Member="Engnotes" Storage="_Engnotes" DbType="VarChar(255)" />
+      <Column Name="verifydt" Member="Verifydt" Storage="_Verifydt" DbType="DateTime" />
+      <Column Name="controller_id" Member="Controller_id" Storage="_Controller_id" DbType="Int" />
+      <Column Name="causecode_id" Member="Causecode_id" Storage="_Causecode_id" DbType="Int" />
+      <Column Name="problemcode_id" Member="Problemcode_id" Storage="_Problemcode_id" DbType="Int" />
+      <Column Name="solutioncode_id" Member="Solutioncode_id" Storage="_Solutioncode_id" DbType="Int" />
+      <Column Name="paytype_id" Member="Paytype_id" Storage="_Paytype_id" DbType="Int" />
+      <Column Name="insertdate" Member="Insertdate" Storage="_Insertdate" DbType="DateTime" />
+      <Column Name="workload" Member="Workload" Storage="_Workload" DbType="VarChar(50)" />
+      <Column Name="renewcontract" Member="Renewcontract" Storage="_Renewcontract" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_debriefcustomeravailability" Member="Fv_debriefcustomeravailability">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_debriefcustomeravailability">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier NOT NULL" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int NOT NULL" />
+      <Column Name="day_id" Member="Day_id" Storage="_Day_id" DbType="Int" />
+      <Column Name="starttime" Member="Starttime" Storage="_Starttime" DbType="DateTime" />
+      <Column Name="endtime" Member="Endtime" Storage="_Endtime" DbType="DateTime" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_debriefoperations" Member="Fv_debriefoperations">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_debriefoperations">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier NOT NULL" />
+      <Column Name="operations_id" Member="Operations_id" Storage="_Operations_id" DbType="Int" />
+      <Column Name="debriefvalue" Member="Debriefvalue" Storage="_Debriefvalue" DbType="VarChar(50)" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_debriefreturns" Member="Fv_debriefreturns">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_debriefreturns">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier NOT NULL" />
+      <Column Name="barrel_id" Member="Barrel_id" Storage="_Barrel_id" DbType="Int NOT NULL" />
+      <Column Name="returnremark_id" Member="Returnremark_id" Storage="_Returnremark_id" DbType="Int" />
+      <Column Name="bestbefore" Member="Bestbefore" Storage="_Bestbefore" DbType="DateTime" />
+      <Column Name="filldate" Member="Filldate" Storage="_Filldate" DbType="DateTime" />
+      <Column Name="barrelnumber" Member="Barrelnumber" Storage="_Barrelnumber" DbType="Decimal(24,0)" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_debriefserviceobject" Member="Fv_debriefserviceobject">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_debriefserviceobject">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="serviceobject_id" Member="Serviceobject_id" Storage="_Serviceobject_id" DbType="Int" />
+      <Column Name="serviceobjecttype_id" Member="Serviceobjecttype_id" Storage="_Serviceobjecttype_id" DbType="Int" />
+      <Column Name="amount_a" Member="Amount_a" Storage="_Amount_a" DbType="Int" />
+      <Column Name="amount_b" Member="Amount_b" Storage="_Amount_b" DbType="Int" />
+      <Column Name="amount_c" Member="Amount_c" Storage="_Amount_c" DbType="Int" />
+      <Column Name="phvalue" Member="Phvalue" Storage="_Phvalue" DbType="VarChar(50)" />
+      <Column Name="malfunctioncode_id" Member="Malfunctioncode_id" Storage="_Malfunctioncode_id" DbType="Int" />
+      <Column Name="done" Member="Done" Storage="_Done" DbType="Char(10)" />
+      <Column Name="isseen" Member="Isseen" Storage="_Isseen" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineer" Member="Fv_engineer">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_engineer">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="username" Member="Username" Storage="_Username" DbType="VarChar(50)" />
+      <Column Name="password" Member="Password" Storage="_Password" DbType="VarChar(50)" />
+      <Column Name="firstname" Member="Firstname" Storage="_Firstname" DbType="VarChar(50)" />
+      <Column Name="presurname" Member="Presurname" Storage="_Presurname" DbType="VarChar(20)" />
+      <Column Name="surname" Member="Surname" Storage="_Surname" DbType="VarChar(50)" />
+      <Column Name="initials" Member="Initials" Storage="_Initials" DbType="VarChar(50)" />
+      <Column Name="title" Member="Title" Storage="_Title" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(10)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="VarChar(50)" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(15)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="modemnumber" Member="Modemnumber" Storage="_Modemnumber" DbType="VarChar(15)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="engineergroup_id" Member="Engineergroup_id" Storage="_Engineergroup_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="language_id" Member="Language_id" Storage="_Language_id" DbType="Char(3)" />
+      <Association Name="fk_av_assignment_engineer" Member="Fv_av_assignments" Storage="_Fv_av_assignments" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_av_calendar_fv_engineer" Member="Fv_av_calendar" Storage="_Fv_av_calendar" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_av_engineer_specialdays_fv_engineer" Member="Fv_av_engineer_specialdays" Storage="_Fv_av_engineer_specialdays" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineercapability" Member="Fv_engineercapability">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_engineercapability">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="capability_id" Member="Capability_id" Storage="_Capability_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineergroup" Member="Fv_engineergroup">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_engineergroup">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineerregion" Member="Fv_engineerregion">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_engineerregion">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineerstatus" Member="Fv_engineerstatus">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_engineerstatus">
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="last_zip" Member="Last_zip" Storage="_Last_zip" DbType="VarChar(50)" />
+      <Column Name="x" Member="X" Storage="_X" DbType="Int" />
+      <Column Name="y" Member="Y" Storage="_Y" DbType="Int" />
+      <Column Name="labourstatus_id" Member="Labourstatus_id" Storage="_Labourstatus_id" DbType="Int" />
+      <Column Name="last_update" Member="Last_update" Storage="_Last_update" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_generate_guid" Member="Fv_generate_guid">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_generate_guid">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="guid" Member="Guid" Storage="_Guid" DbType="UniqueIdentifier" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_grouprelation" Member="Fv_grouprelation">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_grouprelation">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="plannergroup_id" Member="Plannergroup_id" Storage="_Plannergroup_id" DbType="Int NOT NULL" />
+      <Column Name="engineergroup_id" Member="Engineergroup_id" Storage="_Engineergroup_id" DbType="Int NOT NULL" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_history" Member="Fv_history">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_history">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="engineername" Member="Engineername" Storage="_Engineername" DbType="VarChar(50)" />
+      <Column Name="activitydescription" Member="Activitydescription" Storage="_Activitydescription" DbType="VarChar(50)" />
+      <Column Name="workdt" Member="Workdt" Storage="_Workdt" DbType="DateTime" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="objectdescription" Member="Objectdescription" Storage="_Objectdescription" DbType="VarChar(50)" />
+      <Column Name="cause" Member="Cause" Storage="_Cause" DbType="VarChar(50)" />
+      <Column Name="problem" Member="Problem" Storage="_Problem" DbType="VarChar(50)" />
+      <Column Name="solution" Member="Solution" Storage="_Solution" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="serviceorder_id" Member="Serviceorder_id" Storage="_Serviceorder_id" DbType="UniqueIdentifier" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_icon" Member="Fv_icon">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_icon">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="filename" Member="Filename" Storage="_Filename" DbType="Char(10) NOT NULL" CanBeNull="false" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_invoice" Member="Fv_invoice">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_invoice">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="invoicenumber" Member="Invoicenumber" Storage="_Invoicenumber" DbType="VarChar(50)" />
+      <Column Name="status" Member="Status" Storage="_Status" DbType="Int" />
+      <Column Name="statusdt" Member="Statusdt" Storage="_Statusdt" DbType="DateTime" />
+      <Column Name="exported" Member="Exported" Storage="_Exported" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_jobsheet" Member="Fv_jobsheet">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_jobsheet">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="filename" Member="Filename" Storage="_Filename" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_jobsheetfield" Member="Fv_jobsheetfield">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_jobsheetfield">
+      <Column Name="parent_id" Member="Parent_id" Storage="_Parent_id" DbType="Int NOT NULL" />
+      <Column Name="query_id" Member="Query_id" Storage="_Query_id" DbType="Int NOT NULL" />
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="fieldname" Member="Fieldname" Storage="_Fieldname" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="format" Member="Format" Storage="_Format" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_jobsheetquery" Member="Fv_jobsheetquery">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_jobsheetquery">
+      <Column Name="jobsheet_id" Member="Jobsheet_id" Storage="_Jobsheet_id" DbType="Int NOT NULL" />
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" />
+      <Column Name="querySQL" Member="QuerySQL" Storage="_QuerySQL" DbType="VarChar(1024) NOT NULL" CanBeNull="false" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_labour" Member="Fv_labour">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_labour">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="startdt" Member="Startdt" Storage="_Startdt" DbType="DateTime" />
+      <Column Name="enddt" Member="Enddt" Storage="_Enddt" DbType="DateTime" />
+      <Column Name="rostartdt" Member="Rostartdt" Storage="_Rostartdt" DbType="DateTime" />
+      <Column Name="roenddt" Member="Roenddt" Storage="_Roenddt" DbType="DateTime" />
+      <Column Name="mileage" Member="Mileage" Storage="_Mileage" DbType="Decimal(10,0)" />
+      <Column Name="verifydt" Member="Verifydt" Storage="_Verifydt" DbType="DateTime" />
+      <Column Name="labourstatus_id" Member="Labourstatus_id" Storage="_Labourstatus_id" DbType="Int" />
+      <Column Name="controller_id" Member="Controller_id" Storage="_Controller_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="agendastatustype_id" Member="Agendastatustype_id" Storage="_Agendastatustype_id" DbType="Int" />
+      <Column Name="subnumber" Member="Subnumber" Storage="_Subnumber" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="exported" Member="Exported" Storage="_Exported" DbType="Int" />
+      <Column Name="exporteddt" Member="Exporteddt" Storage="_Exporteddt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_labourstatus" Member="Fv_labourstatus">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_labourstatus">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_languagecolumn" Member="Fv_languagecolumn">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_languagecolumn">
+      <Column Name="columnr" Member="Columnr" Storage="_Columnr" DbType="Int NOT NULL" />
+      <Column Name="languagename" Member="Languagename" Storage="_Languagename" DbType="Char(32)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_languageitem " Member="Fv_languageitem">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_languageitem">
+      <Column Name="itemname" Member="Itemname" Storage="_Itemname" DbType="VarChar(255) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="description_default" Member="Description_default" Storage="_Description_default" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="description_nl" Member="Description_nl" Storage="_Description_nl" DbType="VarChar(255)" />
+      <Column Name="description_en" Member="Description_en" Storage="_Description_en" DbType="VarChar(255)" />
+      <Column Name="description_du" Member="Description_du" Storage="_Description_du" DbType="VarChar(255)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(255)" />
+      <Column Name="owner_form" Member="Owner_form" Storage="_Owner_form" DbType="Char(20)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_lng_caption" Member="Fv_lng_caption">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_lng_caption">
+      <Column Name="language" Member="Language" Storage="_Language" DbType="VarChar(3) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="caption_id" Member="Caption_id" Storage="_Caption_id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int" />
+      <Association Name="FK_fv_lng_caption_fv_lng_type" Member="Fv_lng_type" Storage="_Fv_lng_type" ThisKey="Language" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_lng_subset" Member="Fv_lng_subset">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_lng_subset">
+      <Column Name="subsettype_id" Member="Subsettype_id" Storage="_Subsettype_id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="caption_id" Member="Caption_id" Storage="_Caption_id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Association Name="FK_fv_lng_subset_fv_lng_subsettype" Member="Fv_lng_subsettype" Storage="_Fv_lng_subsettype" ThisKey="Subsettype_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_lng_subsettype" Member="Fv_lng_subsettype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_lng_subsettype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="FK_fv_lng_subset_fv_lng_subsettype" Member="Fv_lng_subset" Storage="_Fv_lng_subset" ThisKey="Id" OtherKey="Subsettype_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_lng_type" Member="Fv_lng_type">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_lng_type">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="VarChar(3) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Association Name="FK_fv_lng_caption_fv_lng_type" Member="Fv_lng_caption" Storage="_Fv_lng_caption" ThisKey="Id" OtherKey="Language" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_location" Member="Fv_location">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_location">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="locationtype_id" Member="Locationtype_id" Storage="_Locationtype_id" DbType="Int" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_locationtype" Member="Fv_locationtype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_locationtype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_locationtypemutation" Member="Fv_locationtypemutation">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_locationtypemutation">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="orderrelated" Member="Orderrelated" Storage="_Orderrelated" DbType="Int NOT NULL" />
+      <Column Name="multilocationtype_id" Member="Multilocationtype_id" Storage="_Multilocationtype_id" DbType="Int" />
+      <Column Name="fromlocationtype_id" Member="Fromlocationtype_id" Storage="_Fromlocationtype_id" DbType="Int NOT NULL" />
+      <Column Name="tolocationtype_id" Member="Tolocationtype_id" Storage="_Tolocationtype_id" DbType="Int NOT NULL" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="code" Member="Code" Storage="_Code" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_login" Member="Fv_login">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_login">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="username" Member="Username" Storage="_Username" DbType="VarChar(50)" />
+      <Column Name="logindt" Member="Logindt" Storage="_Logindt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_logisticmanager" Member="Fv_logisticmanager">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_logisticmanager">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="firstname" Member="Firstname" Storage="_Firstname" DbType="VarChar(50)" />
+      <Column Name="presurname" Member="Presurname" Storage="_Presurname" DbType="VarChar(20)" />
+      <Column Name="surname" Member="Surname" Storage="_Surname" DbType="VarChar(50)" />
+      <Column Name="initials" Member="Initials" Storage="_Initials" DbType="VarChar(50)" />
+      <Column Name="title" Member="Title" Storage="_Title" DbType="VarChar(50)" />
+      <Column Name="username" Member="Username" Storage="_Username" DbType="VarChar(50)" />
+      <Column Name="password" Member="Password" Storage="_Password" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(15)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_malfunctioncode" Member="Fv_malfunctioncode">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_malfunctioncode">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_material" Member="Fv_material">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_material">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="price" Member="Price" Storage="_Price" DbType="Decimal(9,2)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="unit_id" Member="Unit_id" Storage="_Unit_id" DbType="Int" />
+      <Column Name="currency_id" Member="Currency_id" Storage="_Currency_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="materialtype_id" Member="Materialtype_id" Storage="_Materialtype_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_materialmutation" Member="Fv_materialmutation">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_materialmutation">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="mutationdt" Member="Mutationdt" Storage="_Mutationdt" DbType="DateTime" />
+      <Column Name="quantity" Member="Quantity" Storage="_Quantity" DbType="Real" />
+      <Column Name="material_id" Member="Material_id" Storage="_Material_id" DbType="Int" />
+      <Column Name="locationtypemutation_id" Member="Locationtypemutation_id" Storage="_Locationtypemutation_id" DbType="Int" />
+      <Column Name="location_id" Member="Location_id" Storage="_Location_id" DbType="Int" />
+      <Column Name="verifydt" Member="Verifydt" Storage="_Verifydt" DbType="DateTime" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="warranty_id" Member="Warranty_id" Storage="_Warranty_id" DbType="Int" />
+      <Column Name="controller_id" Member="Controller_id" Storage="_Controller_id" DbType="Int" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="fromlocation_id" Member="Fromlocation_id" Storage="_Fromlocation_id" DbType="Int" />
+      <Column Name="tolocation_id" Member="Tolocation_id" Storage="_Tolocation_id" DbType="Int" />
+      <Column Name="materialmutationreason_id" Member="Materialmutationreason_id" Storage="_Materialmutationreason_id" DbType="Int" />
+      <Column Name="invoicenumber" Member="Invoicenumber" Storage="_Invoicenumber" DbType="VarChar(50)" />
+      <Column Name="subnumber" Member="Subnumber" Storage="_Subnumber" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="exported" Member="Exported" Storage="_Exported" DbType="Int" />
+      <Column Name="serviceorder_id" Member="Serviceorder_id" Storage="_Serviceorder_id" DbType="UniqueIdentifier" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_materialmutationreason" Member="Fv_materialmutationreason">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_materialmutationreason">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="billable" Member="Billable" Storage="_Billable" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_materialset" Member="Fv_materialset">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_materialset">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int" />
+      <Column Name="set_id" Member="Set_id" Storage="_Set_id" DbType="Int" />
+      <Column Name="material_id" Member="Material_id" Storage="_Material_id" DbType="Int" />
+      <Column Name="quantity" Member="Quantity" Storage="_Quantity" DbType="Real" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="locationtypemutation_id" Member="Locationtypemutation_id" Storage="_Locationtypemutation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_materialtype" Member="Fv_materialtype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_materialtype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_month" Member="Fv_month">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_month">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_operations" Member="Fv_operations">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_operations">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(100)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="valuetype" Member="Valuetype" Storage="_Valuetype" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_operationslist" Member="Fv_operationslist">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_operationslist">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int" />
+      <Column Name="list_id" Member="List_id" Storage="_List_id" DbType="Int" />
+      <Column Name="operations_id" Member="Operations_id" Storage="_Operations_id" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_organisation" Member="Fv_organisation">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_organisation">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="name" Member="Name" Storage="_Name" DbType="VarChar(50)" />
+      <Column Name="contact" Member="Contact" Storage="_Contact" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(10)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="VarChar(50)" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(50)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(50)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="rowguid" Member="Rowguid" Storage="_Rowguid" DbType="UniqueIdentifier NOT NULL" />
+      <Association Name="FK_fv_param_fv_organisation" Member="Fv_param" Storage="_Fv_param" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_ownertype" Member="Fv_ownertype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_ownertype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_param" Member="Fv_param">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_param">
+      <Column Name="param" Member="Param" Storage="_Param" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="paramvalue" Member="Paramvalue" Storage="_Paramvalue" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_param_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_paytype" Member="Fv_paytype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_paytype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="received" Member="Received" Storage="_Received" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_planner" Member="Fv_planner">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_planner">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="username" Member="Username" Storage="_Username" DbType="VarChar(50)" />
+      <Column Name="password" Member="Password" Storage="_Password" DbType="VarChar(50)" />
+      <Column Name="firstname" Member="Firstname" Storage="_Firstname" DbType="VarChar(50)" />
+      <Column Name="presurname" Member="Presurname" Storage="_Presurname" DbType="VarChar(20)" />
+      <Column Name="surname" Member="Surname" Storage="_Surname" DbType="VarChar(50)" />
+      <Column Name="initials" Member="Initials" Storage="_Initials" DbType="VarChar(10)" />
+      <Column Name="title" Member="Title" Storage="_Title" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(10)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="VarChar(50)" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(15)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="plannergroup_id" Member="Plannergroup_id" Storage="_Plannergroup_id" DbType="Int" />
+      <Column Name="administrator" Member="Administrator" Storage="_Administrator" DbType="Int" />
+      <Column Name="profile_id" Member="Profile_id" Storage="_Profile_id" DbType="Int" />
+      <Column Name="language_id" Member="Language_id" Storage="_Language_id" DbType="Char(10)" />
+      <Column Name="orderby" Member="Orderby" Storage="_Orderby" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Association Name="FK_fv_av_assignments_fv_planner" Member="Fv_av_assignments" Storage="_Fv_av_assignments" ThisKey="Id" OtherKey="Planner_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_planner_login" Member="Fv_planner_login">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_planner_login">
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+      <Column Name="session_id" Member="Session_id" Storage="_Session_id" DbType="Int" />
+      <Column Name="changedt" Member="Changedt" Storage="_Changedt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_plannerconfiguration" Member="Fv_plannerconfiguration">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_plannerconfiguration">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" AutoSync="Always" />
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="engineergroup_id" Member="Engineergroup_id" Storage="_Engineergroup_id" DbType="Int" />
+      <Column Name="ui_param" Member="Ui_param" Storage="_Ui_param" DbType="Int" />
+      <Column Name="changedt" Member="Changedt" Storage="_Changedt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="ordersel_param" Member="Ordersel_param" Storage="_Ordersel_param" DbType="Int" />
+      <Column Name="ui_settings" Member="Ui_settings" Storage="_Ui_settings" DbType="VarChar(255)" />
+      <Column Name="mapvariables" Member="Mapvariables" Storage="_Mapvariables" DbType="VarChar(255)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_plannergroup" Member="Fv_plannergroup">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_plannergroup">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_plannerregion" Member="Fv_plannerregion">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_plannerregion">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_priority" Member="Fv_priority">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_priority">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_problemcode" Member="Fv_problemcode">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_problemcode">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_profile" Member="Fv_profile">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_profile">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="availability_rights" Member="Availability_rights" Storage="_Availability_rights" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_profilerights" Member="Fv_profilerights">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_profilerights">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="profile_id" Member="Profile_id" Storage="_Profile_id" DbType="Int" />
+      <Column Name="activitystatusdirection_id" Member="Activitystatusdirection_id" Storage="_Activitystatusdirection_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_query" Member="Fv_query">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_query">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="type" Member="Type" Storage="_Type" DbType="VarChar(50)" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="view_count" Member="View_count" Storage="_View_count" DbType="VarChar(50)" />
+      <Column Name="view_result" Member="View_result" Storage="_View_result" DbType="VarChar(3000)" />
+      <Column Name="target_page" Member="Target_page" Storage="_Target_page" DbType="VarChar(100)" />
+      <Column Name="target_id_field" Member="Target_id_field" Storage="_Target_id_field" DbType="VarChar(50)" />
+      <Column Name="result_id_field" Member="Result_id_field" Storage="_Result_id_field" DbType="VarChar(50)" />
+      <Column Name="tag_ordernr" Member="Tag_ordernr" Storage="_Tag_ordernr" DbType="VarChar(50)" />
+      <Column Name="tag_engineer_id" Member="Tag_engineer_id" Storage="_Tag_engineer_id" DbType="VarChar(50)" />
+      <Column Name="tag_activitytype_id" Member="Tag_activitytype_id" Storage="_Tag_activitytype_id" DbType="VarChar(50)" />
+      <Column Name="tag_date" Member="Tag_date" Storage="_Tag_date" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_radiostatus" Member="Fv_radiostatus">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_radiostatus">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_EN" Member="Description_EN" Storage="_Description_EN" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_region" Member="Fv_region">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_region">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_remark" Member="Fv_remark">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_remark">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_returnremark" Member="Fv_returnremark">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_returnremark">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_sendfile" Member="Fv_sendfile">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_sendfile">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" AutoSync="Always" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="sourceip" Member="Sourceip" Storage="_Sourceip" DbType="VarChar(50)" />
+      <Column Name="remotepath" Member="Remotepath" Storage="_Remotepath" DbType="VarChar(200)" />
+      <Column Name="localpath" Member="Localpath" Storage="_Localpath" DbType="VarChar(200)" />
+      <Column Name="filename" Member="Filename" Storage="_Filename" DbType="VarChar(200)" />
+      <Column Name="source" Member="Source" Storage="_Source" DbType="Image" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_sendfileengineer" Member="Fv_sendfileengineer">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_sendfileengineer">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" AutoSync="Always" />
+      <Column Name="sendfile_id" Member="Sendfile_id" Storage="_Sendfile_id" DbType="Int" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="returnstatus" Member="Returnstatus" Storage="_Returnstatus" DbType="VarChar(200)" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_sentserviceobject" Member="Fv_sentserviceobject">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_sentserviceobject">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int" />
+      <Column Name="serviceobject_external_id" Member="Serviceobject_external_id" Storage="_Serviceobject_external_id" DbType="VarChar(50)" />
+      <Column Name="serviceorder_external_id" Member="Serviceorder_external_id" Storage="_Serviceorder_external_id" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_senttoclient" Member="Fv_senttoclient">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_senttoclient">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int NOT NULL" />
+      <Column Name="xml" Member="Xml" Storage="_Xml" DbType="VarChar(3000) NOT NULL" CanBeNull="false" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="groupid" Member="Groupid" Storage="_Groupid" DbType="UniqueIdentifier" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_servicemanager" Member="Fv_servicemanager">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_servicemanager">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="username" Member="Username" Storage="_Username" DbType="VarChar(50)" />
+      <Column Name="password" Member="Password" Storage="_Password" DbType="VarChar(50)" />
+      <Column Name="firstname" Member="Firstname" Storage="_Firstname" DbType="VarChar(50)" />
+      <Column Name="presurname" Member="Presurname" Storage="_Presurname" DbType="VarChar(20)" />
+      <Column Name="surname" Member="Surname" Storage="_Surname" DbType="VarChar(50)" />
+      <Column Name="initials" Member="Initials" Storage="_Initials" DbType="VarChar(10)" />
+      <Column Name="title" Member="Title" Storage="_Title" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_serviceobject" Member="Fv_serviceobject">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_serviceobject">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="serialnumber" Member="Serialnumber" Storage="_Serialnumber" DbType="VarChar(50)" />
+      <Column Name="productiondt" Member="Productiondt" Storage="_Productiondt" DbType="DateTime" />
+      <Column Name="installationdt" Member="Installationdt" Storage="_Installationdt" DbType="DateTime" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(10)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="VarChar(50)" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="parent_id" Member="Parent_id" Storage="_Parent_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int" />
+      <Column Name="serviceobjecttype_id" Member="Serviceobjecttype_id" Storage="_Serviceobjecttype_id" DbType="Int" />
+      <Column Name="material_id" Member="Material_id" Storage="_Material_id" DbType="Int" />
+      <Column Name="ownertype_id" Member="Ownertype_id" Storage="_Ownertype_id" DbType="Int" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="quantity" Member="Quantity" Storage="_Quantity" DbType="Int" />
+      <Column Name="subnumber" Member="Subnumber" Storage="_Subnumber" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_serviceobjecttype" Member="Fv_serviceobjecttype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_serviceobjecttype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="brand" Member="Brand" Storage="_Brand" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="capability_id" Member="Capability_id" Storage="_Capability_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_serviceorder" Member="Fv_serviceorder">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_serviceorder">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="orderdt" Member="Orderdt" Storage="_Orderdt" DbType="DateTime" />
+      <Column Name="verifydt" Member="Verifydt" Storage="_Verifydt" DbType="DateTime" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="controller_id" Member="Controller_id" Storage="_Controller_id" DbType="VarChar(10)" />
+      <Column Name="mainengineer_id" Member="Mainengineer_id" Storage="_Mainengineer_id" DbType="VarChar(10)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int" />
+      <Column Name="custservemp_id" Member="Custservemp_id" Storage="_Custservemp_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_set" Member="Fv_set">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_set">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="activitytype_id" Member="Activitytype_id" Storage="_Activitytype_id" DbType="Int" />
+      <Column Name="serviceobjecttype_id" Member="Serviceobjecttype_id" Storage="_Serviceobjecttype_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_solutioncode" Member="Fv_solutioncode">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_solutioncode">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="description_fr" Member="Description_fr" Storage="_Description_fr" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="problemcode_id" Member="Problemcode_id" Storage="_Problemcode_id" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_sys_table" Member="Fv_sys_table">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_sys_table">
+      <Column Name="tabelnaam" Member="Tabelnaam" Storage="_Tabelnaam" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="XML_Hierachy_Level" Member="XML_Hierachy_Level" Storage="_XML_Hierachy_Level" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_sys_table_backup" Member="Fv_sys_table_backup">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_sys_table_backup">
+      <Column Name="tabelnaam" Member="Tabelnaam" Storage="_Tabelnaam" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="XML_Hierachy_Level" Member="XML_Hierachy_Level" Storage="_XML_Hierachy_Level" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_tableadmin" Member="Fv_tableadmin">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_tableadmin">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="tablename" Member="Tablename" Storage="_Tablename" DbType="VarChar(50)" />
+      <Column Name="tablealias" Member="Tablealias" Storage="_Tablealias" DbType="VarChar(50)" />
+      <Column Name="change" Member="Change" Storage="_Change" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_tableinsertrank" Member="Fv_tableinsertrank">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_tableinsertrank">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="TableName" Member="TableName" Storage="_TableName" DbType="Char(128)" />
+      <Column Name="InsertRank" Member="InsertRank" Storage="_InsertRank" DbType="Int NOT NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_tmp" Member="Fv_tmp">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_tmp">
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(4000)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_translate" Member="Fv_translate">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_translate">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="subset" Member="Subset" Storage="_Subset" DbType="VarChar(50)" />
+      <Column Name="item" Member="Item" Storage="_Item" DbType="VarChar(255)" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(255)" />
+      <Column Name="language_id" Member="Language_id" Storage="_Language_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_TranslationTable" Member="Fv_TranslationTable">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_TranslationTable">
+      <Column Name="TableName" Member="TableName" Storage="_TableName" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="ColumnBaseName" Member="ColumnBaseName" Storage="_ColumnBaseName" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_unit" Member="Fv_unit">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_unit">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="symbol" Member="Symbol" Storage="_Symbol" DbType="VarChar(15)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_warranty" Member="Fv_warranty">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_warranty">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLerror" Member="Fv_XMLerror">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLerror">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="errornumber" Member="Errornumber" Storage="_Errornumber" DbType="VarChar(50)" />
+      <Column Name="component" Member="Component" Storage="_Component" DbType="VarChar(50)" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="Text" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLexportattributes" Member="Fv_XMLexportattributes">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLexportattributes">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="XMLMessageName" Member="XMLMessageName" Storage="_XMLMessageName" DbType="NVarChar(50)" />
+      <Column Name="XMLattribName" Member="XMLattribName" Storage="_XMLattribName" DbType="NVarChar(50)" />
+      <Column Name="XMLattribValue" Member="XMLattribValue" Storage="_XMLattribValue" DbType="NVarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLexportdefinition" Member="Fv_XMLexportdefinition">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLexportdefinition">
+      <Column Name="Id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="FileName" Member="FileName" Storage="_FileName" DbType="Char(50)" />
+      <Column Name="ParentListTag" Member="ParentListTag" Storage="_ParentListTag" DbType="Char(50)" />
+      <Column Name="ListTag" Member="ListTag" Storage="_ListTag" DbType="Char(50)" />
+      <Column Name="ParentTag" Member="ParentTag" Storage="_ParentTag" DbType="Char(50)" />
+      <Column Name="Tag" Member="Tag" Storage="_Tag" DbType="Char(50)" />
+      <Column Name="FV_SourceTable" Member="FV_SourceTable" Storage="_FV_SourceTable" DbType="Char(50)" />
+      <Column Name="FV_SourceField" Member="FV_SourceField" Storage="_FV_SourceField" DbType="Char(50)" />
+      <Column Name="Alias" Member="Alias" Storage="_Alias" DbType="Char(50)" />
+      <Column Name="Length" Member="Length" Storage="_Length" DbType="Float" />
+      <Column Name="HierarchyLevel" Member="HierarchyLevel" Storage="_HierarchyLevel" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLexportqueries" Member="Fv_XMLexportqueries">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLexportqueries">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" />
+      <Column Name="IsChildOf" Member="IsChildOf" Storage="_IsChildOf" DbType="Char(50)" />
+      <Column Name="ListTag" Member="ListTag" Storage="_ListTag" DbType="Char(50)" />
+      <Column Name="Tag" Member="Tag" Storage="_Tag" DbType="Char(50)" />
+      <Column Name="Query" Member="Query" Storage="_Query" DbType="Char(2000)" />
+      <Column Name="ExportTable" Member="ExportTable" Storage="_ExportTable" DbType="Char(50)" />
+      <Column Name="MainKey" Member="MainKey" Storage="_MainKey" DbType="Char(50)" />
+      <Column Name="Stepnumber" Member="Stepnumber" Storage="_Stepnumber" DbType="Int NOT NULL" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Bit" />
+      <Column Name="ticker" Member="Ticker" Storage="_Ticker" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLgatewayini" Member="Fv_XMLgatewayini">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLgatewayini">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="XMLgatewayID" Member="XMLgatewayID" Storage="_XMLgatewayID" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int NOT NULL" />
+      <Column Name="XMLServiceOrderParentTag" Member="XMLServiceOrderParentTag" Storage="_XMLServiceOrderParentTag" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="XMLAdvicedMaterialsParentTag" Member="XMLAdvicedMaterialsParentTag" Storage="_XMLAdvicedMaterialsParentTag" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="XMLImportMainTag" Member="XMLImportMainTag" Storage="_XMLImportMainTag" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="XMLimportDir" Member="XMLimportDir" Storage="_XMLimportDir" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="XMLexportDir" Member="XMLexportDir" Storage="_XMLexportDir" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="XMLfileCreateDelay" Member="XMLfileCreateDelay" Storage="_XMLfileCreateDelay" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GatewayInUse" Member="GatewayInUse" Storage="_GatewayInUse" DbType="Int NOT NULL" />
+      <Column Name="ExportInterval" Member="ExportInterval" Storage="_ExportInterval" DbType="Int NOT NULL" />
+      <Column Name="ImportInterval" Member="ImportInterval" Storage="_ImportInterval" DbType="Int NOT NULL" />
+      <Column Name="KeepExportDays" Member="KeepExportDays" Storage="_KeepExportDays" DbType="Int NOT NULL" />
+      <Column Name="KeepImportDays" Member="KeepImportDays" Storage="_KeepImportDays" DbType="Int NOT NULL" />
+      <Column Name="EmptyTags" Member="EmptyTags" Storage="_EmptyTags" DbType="Bit" />
+      <Column Name="UseLocal" Member="UseLocal" Storage="_UseLocal" DbType="Bit" />
+      <Column Name="start_export_time" Member="Start_export_time" Storage="_Start_export_time" DbType="DateTime" />
+      <Column Name="stop_export_time" Member="Stop_export_time" Storage="_Stop_export_time" DbType="DateTime" />
+      <Column Name="start_import_time" Member="Start_import_time" Storage="_Start_import_time" DbType="DateTime" />
+      <Column Name="stop_import_time" Member="Stop_import_time" Storage="_Stop_import_time" DbType="DateTime" />
+      <Column Name="VersionTag" Member="VersionTag" Storage="_VersionTag" DbType="Bit" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLgatewaystatus" Member="Fv_XMLgatewaystatus">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLgatewaystatus">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" />
+      <Column Name="Organisation_ID" Member="Organisation_ID" Storage="_Organisation_ID" DbType="Int NOT NULL" />
+      <Column Name="XMLgatewayID" Member="XMLgatewayID" Storage="_XMLgatewayID" DbType="Char(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FilesImported" Member="FilesImported" Storage="_FilesImported" DbType="Int" />
+      <Column Name="FilesImported_TMP" Member="FilesImported_TMP" Storage="_FilesImported_TMP" DbType="Int" />
+      <Column Name="FilesExported" Member="FilesExported" Storage="_FilesExported" DbType="Int" />
+      <Column Name="FilesExported_TMP" Member="FilesExported_TMP" Storage="_FilesExported_TMP" DbType="Int" />
+      <Column Name="FilesNOTimported" Member="FilesNOTimported" Storage="_FilesNOTimported" DbType="Int" />
+      <Column Name="FilesNOTimported_TMP" Member="FilesNOTimported_TMP" Storage="_FilesNOTimported_TMP" DbType="Int" />
+      <Column Name="FilesNOTexported" Member="FilesNOTexported" Storage="_FilesNOTexported" DbType="Int" />
+      <Column Name="FilesNOTexported_TMP" Member="FilesNOTexported_TMP" Storage="_FilesNOTexported_TMP" DbType="Int" />
+      <Column Name="ImportErrors" Member="ImportErrors" Storage="_ImportErrors" DbType="Int" />
+      <Column Name="ImportErrors_TMP" Member="ImportErrors_TMP" Storage="_ImportErrors_TMP" DbType="Int" />
+      <Column Name="ExportErrors" Member="ExportErrors" Storage="_ExportErrors" DbType="Int" />
+      <Column Name="ExportErrors_TMP" Member="ExportErrors_TMP" Storage="_ExportErrors_TMP" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLgatewayTargetTablesWithActivityID" Member="Fv_XMLgatewayTargetTablesWithActivityID">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLgatewayTargetTablesWithActivityID">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" />
+      <Column Name="ParentTag" Member="ParentTag" Storage="_ParentTag" DbType="Char(50)" />
+      <Column Name="TargetTable" Member="TargetTable" Storage="_TargetTable" DbType="Char(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLGTWdirection" Member="Fv_XMLGTWdirection">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLGTWdirection">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Char(10) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="Description" Member="Description" Storage="_Description" DbType="Char(10)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLGTWloglevel" Member="Fv_XMLGTWloglevel">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLGTWloglevel">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Char(10) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="Description" Member="Description" Storage="_Description" DbType="Char(10)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLGTWlogtype" Member="Fv_XMLGTWlogtype">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLGTWlogtype">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Char(10) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="Description" Member="Description" Storage="_Description" DbType="Char(10)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLimportdefinition" Member="Fv_XMLimportdefinition">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLimportdefinition">
+      <Column Name="Id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="XML_Parent_Tag" Member="XML_Parent_Tag" Storage="_XML_Parent_Tag" DbType="NVarChar(50)" />
+      <Column Name="XML_Tag" Member="XML_Tag" Storage="_XML_Tag" DbType="NVarChar(255)" />
+      <Column Name="Destination_Table" Member="Destination_Table" Storage="_Destination_Table" DbType="Char(128)" />
+      <Column Name="Destination_Field" Member="Destination_Field" Storage="_Destination_Field" DbType="Char(128)" />
+      <Column Name="LookUpTable" Member="LookUpTable" Storage="_LookUpTable" DbType="NVarChar(50)" />
+      <Column Name="MandatoryExternalID" Member="MandatoryExternalID" Storage="_MandatoryExternalID" DbType="Int" />
+      <Column Name="Conversion" Member="Conversion" Storage="_Conversion" DbType="NVarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="Mandatory" Member="Mandatory" Storage="_Mandatory" DbType="Bit" />
+      <Column Name="XML_DefaultValue" Member="XML_DefaultValue" Storage="_XML_DefaultValue" DbType="Char(10)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLimportdefinition_backup" Member="Fv_XMLimportdefinition_backup">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLimportdefinition_backup">
+      <Column Name="Id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="XML_Parent_Tag" Member="XML_Parent_Tag" Storage="_XML_Parent_Tag" DbType="NVarChar(50)" />
+      <Column Name="XML_Tag" Member="XML_Tag" Storage="_XML_Tag" DbType="NVarChar(255)" />
+      <Column Name="Destination_Table" Member="Destination_Table" Storage="_Destination_Table" DbType="Char(128)" />
+      <Column Name="Destination_Field" Member="Destination_Field" Storage="_Destination_Field" DbType="Char(128)" />
+      <Column Name="LookUpTable" Member="LookUpTable" Storage="_LookUpTable" DbType="NVarChar(50)" />
+      <Column Name="MandatoryExternalID" Member="MandatoryExternalID" Storage="_MandatoryExternalID" DbType="Int" />
+      <Column Name="XML_DefaultValue" Member="XML_DefaultValue" Storage="_XML_DefaultValue" DbType="Char(50)" />
+      <Column Name="Remarks" Member="Remarks" Storage="_Remarks" DbType="NVarChar(255)" />
+      <Column Name="Conversion" Member="Conversion" Storage="_Conversion" DbType="NVarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="XML_ID" Member="XML_ID" Storage="_XML_ID" DbType="Bit" />
+      <Column Name="XML_Type" Member="XML_Type" Storage="_XML_Type" DbType="NVarChar(255)" />
+      <Column Name="XML_Length" Member="XML_Length" Storage="_XML_Length" DbType="Float" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLimportTagDefinition" Member="Fv_XMLimportTagDefinition">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLimportTagDefinition">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="XML_Hierarchy_Level" Member="XML_Hierarchy_Level" Storage="_XML_Hierarchy_Level" DbType="Decimal(18,0)" />
+      <Column Name="XML_LIST_Tag" Member="XML_LIST_Tag" Storage="_XML_LIST_Tag" DbType="NVarChar(50)" />
+      <Column Name="XML_LIST_priority" Member="XML_LIST_priority" Storage="_XML_LIST_priority" DbType="Decimal(18,0)" />
+      <Column Name="XML_Parent_Tag" Member="XML_Parent_Tag" Storage="_XML_Parent_Tag" DbType="NVarChar(50)" />
+      <Column Name="InsertData" Member="InsertData" Storage="_InsertData" DbType="Int" />
+      <Column Name="UpdateData" Member="UpdateData" Storage="_UpdateData" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLimportTemp" Member="Fv_XMLimportTemp">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_XMLimportTemp">
+      <Column Name="Id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="XML_Parent_Tag" Member="XML_Parent_Tag" Storage="_XML_Parent_Tag" DbType="NVarChar(50)" />
+      <Column Name="XML_Tag" Member="XML_Tag" Storage="_XML_Tag" DbType="NVarChar(255)" />
+      <Column Name="Destination_Table" Member="Destination_Table" Storage="_Destination_Table" DbType="Char(128)" />
+      <Column Name="Destination_Field" Member="Destination_Field" Storage="_Destination_Field" DbType="Char(128)" />
+      <Column Name="LookUpTable" Member="LookUpTable" Storage="_LookUpTable" DbType="NVarChar(50)" />
+      <Column Name="MandatoryExternalID" Member="MandatoryExternalID" Storage="_MandatoryExternalID" DbType="Int" />
+      <Column Name="XML_DefaultValue" Member="XML_DefaultValue" Storage="_XML_DefaultValue" DbType="Char(50)" />
+      <Column Name="Remarks" Member="Remarks" Storage="_Remarks" DbType="NVarChar(255)" />
+      <Column Name="Conversion" Member="Conversion" Storage="_Conversion" DbType="NVarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="XML_ID" Member="XML_ID" Storage="_XML_ID" DbType="Bit" />
+      <Column Name="XML_Type" Member="XML_Type" Storage="_XML_Type" DbType="NVarChar(255)" />
+      <Column Name="XML_Length" Member="XML_Length" Storage="_XML_Length" DbType="Float" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_zip" Member="Fv_zip">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_zip">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(50)" />
+      <Column Name="municipal" Member="Municipal" Storage="_Municipal" DbType="VarChar(50)" />
+      <Column Name="muni" Member="Muni" Storage="_Muni" DbType="Int" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="x" Member="X" Storage="_X" DbType="Int" />
+      <Column Name="y" Member="Y" Storage="_Y" DbType="Int" />
+      <Column Name="preferredengineer_id" Member="Preferredengineer_id" Storage="_Preferredengineer_id" DbType="Int" />
+      <Column Name="preferredbackupengineer_id" Member="Preferredbackupengineer_id" Storage="_Preferredbackupengineer_id" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_zip old" Member="Fv_zipOld">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Fv_zipOld">
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(50)" />
+      <Column Name="LONGITUDE" Member="LONGITUDE" Storage="_LONGITUDE" DbType="Float" />
+      <Column Name="LATITUDE" Member="LATITUDE" Storage="_LATITUDE" DbType="Float" />
+      <Column Name="X" Member="X" Storage="_X" DbType="Int" />
+      <Column Name="Y" Member="Y" Storage="_Y" DbType="Int" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(30)" />
+      <Column Name="municipal" Member="Municipal" Storage="_Municipal" DbType="VarChar(30)" />
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.testdummy" Member="Testdummy">
+    <Type Name="StrippedXMLToSQL.AlkenMaes.Testdummy">
+      <Column Name="nr" Member="Nr" Storage="_Nr" DbType="Int" />
+    </Type>
+  </Table>
+</Database>

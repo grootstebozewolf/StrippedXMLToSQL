@@ -1,0 +1,17 @@
+rem Start Visual Studio Command prompt, edit the connectionstring, change the filename to reflect the new dbml and cs files.
+
+sqlmetal /conn:"Password=Fieldv!si0n;Persist Security Info=True;User ID=con;Initial Catalog=FieldVision_Bosch_SP_ontw;Data Source=SRV-DB-02\SRVDB02_2005" /namespace:StrippedXMLToSQL.BoschSP /code:FieldVision_Bosch_SP_ontw.cs /map:FieldVision_Bosch_SP_ontw.map
+
+Voeg aan app.config een nieuwe connectie toe.
+
+<add name="Bosch_SP_ontw"
+         connectionString="Password=Fieldv!si0n;Persist Security Info=True;User ID=con;Initial Catalog=FieldVision_Bosch_SP_ontw;Data Source=SRV-DB-02\SRVDB02_2005;MultipleActiveResultSets=yes"/>
+
+Maak een class aan en map de gegenereerde clients aan de interfaces.
+
+namespace StrippedXMLToSQL.BoschSP
+{
+    public partial class FieldVision_Bosch_SP_ontw : IRepositoryDataContext { }
+    partial class Fv_commfield : ICommField { }
+    partial class Fv_commtable : ICommTable { }
+}

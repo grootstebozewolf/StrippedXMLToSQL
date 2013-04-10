@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrippedXMLToSQL", "StrippedXMLToSQL\StrippedXMLToSQL.csproj", "{52A2863D-9D39-4703-A4E7-DB8432A14BDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{BF1F38BC-9222-4E65-81E9-1CB5BC10AA46}"
+	ProjectSection(SolutionItems) = preProject
+		CreateMappingUsingSQLMetal.txt = CreateMappingUsingSQLMetal.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://srv-denali:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = StrippedXMLToSQL\\StrippedXMLToSQL.csproj
+		SccProjectName1 = StrippedXMLToSQL
+		SccLocalPath1 = StrippedXMLToSQL
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52A2863D-9D39-4703-A4E7-DB8432A14BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52A2863D-9D39-4703-A4E7-DB8432A14BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52A2863D-9D39-4703-A4E7-DB8432A14BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52A2863D-9D39-4703-A4E7-DB8432A14BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

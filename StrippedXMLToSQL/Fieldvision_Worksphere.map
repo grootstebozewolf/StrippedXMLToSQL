@@ -1,0 +1,2038 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="FieldVision" xmlns="http://schemas.microsoft.com/linqtosql/mapping/2007">
+  <Table Name="dbo.fv_activity" Member="Fv_activity">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_activity">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int NOT NULL" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="sub_id" Member="Sub_id" Storage="_Sub_id" DbType="Int" />
+      <Column Name="maxstatusdt" Member="Maxstatusdt" Storage="_Maxstatusdt" DbType="DateTime" />
+      <Column Name="activitystatustype_id" Member="Activitystatustype_id" Storage="_Activitystatustype_id" DbType="Int" />
+      <Column Name="planstartdt" Member="Planstartdt" Storage="_Planstartdt" DbType="DateTime" />
+      <Column Name="planenddt" Member="Planenddt" Storage="_Planenddt" DbType="DateTime" />
+      <Column Name="criteriumstartdt" Member="Criteriumstartdt" Storage="_Criteriumstartdt" DbType="DateTime" />
+      <Column Name="criteriumenddt" Member="Criteriumenddt" Storage="_Criteriumenddt" DbType="DateTime" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(255)" />
+      <Column Name="name" Member="Name" Storage="_Name" DbType="VarChar(50)" />
+      <Column Name="contact" Member="Contact" Storage="_Contact" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(10)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="VarChar(50)" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(15)" />
+      <Column Name="customerexternal_id" Member="Customerexternal_id" Storage="_Customerexternal_id" DbType="VarChar(50)" />
+      <Column Name="serviceorder_id" Member="Serviceorder_id" Storage="_Serviceorder_id" DbType="UniqueIdentifier NOT NULL" />
+      <Column Name="activitytype_id" Member="Activitytype_id" Storage="_Activitytype_id" DbType="Int" />
+      <Column Name="causecode_id" Member="Causecode_id" Storage="_Causecode_id" DbType="Int" />
+      <Column Name="problemcode_id" Member="Problemcode_id" Storage="_Problemcode_id" DbType="Int" />
+      <Column Name="solutioncode_id" Member="Solutioncode_id" Storage="_Solutioncode_id" DbType="Int" />
+      <Column Name="capability_id" Member="Capability_id" Storage="_Capability_id" DbType="Int" />
+      <Column Name="serviceobject_id" Member="Serviceobject_id" Storage="_Serviceobject_id" DbType="Int" />
+      <Column Name="contract_id" Member="Contract_id" Storage="_Contract_id" DbType="Int" />
+      <Column Name="priority_id" Member="Priority_id" Storage="_Priority_id" DbType="Int" />
+      <Column Name="seen_by_eng" Member="Seen_by_eng" Storage="_Seen_by_eng" DbType="Int" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="changedt" Member="Changedt" Storage="_Changedt" DbType="DateTime" />
+      <Column Name="productgroep_id" Member="Productgroep_id" Storage="_Productgroep_id" DbType="Int" />
+      <Column Name="customer_main_id" Member="Customer_main_id" Storage="_Customer_main_id" DbType="Int" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int" />
+      <Column Name="ministoringsboek" Member="Ministoringsboek" Storage="_Ministoringsboek" DbType="VarChar(255)" />
+      <Column Name="verantwoordelijk" Member="Verantwoordelijk" Storage="_Verantwoordelijk" DbType="VarChar(50)" />
+      <Column Name="planner_name" Member="Planner_name" Storage="_Planner_name" DbType="VarChar(50)" />
+      <Column Name="meldkamernummer" Member="Meldkamernummer" Storage="_Meldkamernummer" DbType="VarChar(50)" />
+      <Column Name="taken" Member="Taken" Storage="_Taken" DbType="VarChar(4096)" />
+      <Column Name="normtijd" Member="Normtijd" Storage="_Normtijd" DbType="Real" />
+      <Column Name="historie_tekst" Member="Historie_tekst" Storage="_Historie_tekst" DbType="VarChar(255)" />
+      <Column Name="aangemaakt_door_naam" Member="Aangemaakt_door_naam" Storage="_Aangemaakt_door_naam" DbType="VarChar(50)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="serviceordernumber" Member="Serviceordernumber" Storage="_Serviceordernumber" DbType="VarChar(50)" />
+      <Column Name="ordersoort_id" Member="Ordersoort_id" Storage="_Ordersoort_id" DbType="Int NOT NULL" />
+      <Column Name="functieplaatsnaam" Member="Functieplaatsnaam" Storage="_Functieplaatsnaam" DbType="VarChar(50)" />
+      <Column Name="name_2" Member="Name_2" Storage="_Name_2" DbType="VarChar(50)" />
+      <Column Name="contactpersoon" Member="Contactpersoon" Storage="_Contactpersoon" DbType="VarChar(50)" />
+      <Column Name="contactpersoon_phone" Member="Contactpersoon_phone" Storage="_Contactpersoon_phone" DbType="VarChar(50)" />
+      <Column Name="equipmentname" Member="Equipmentname" Storage="_Equipmentname" DbType="VarChar(50)" />
+      <Column Name="opdrachtnummer" Member="Opdrachtnummer" Storage="_Opdrachtnummer" DbType="VarChar(50)" />
+      <Column Name="melddatum" Member="Melddatum" Storage="_Melddatum" DbType="DateTime" />
+      <Column Name="melder" Member="Melder" Storage="_Melder" DbType="VarChar(50)" />
+      <Column Name="melder_phone" Member="Melder_phone" Storage="_Melder_phone" DbType="VarChar(50)" />
+      <Column Name="contact_id" Member="Contact_id" Storage="_Contact_id" DbType="Int" />
+      <Column Name="contractnummer" Member="Contractnummer" Storage="_Contractnummer" DbType="VarChar(50)" />
+      <Column Name="engineergroup_id" Member="Engineergroup_id" Storage="_Engineergroup_id" DbType="Int" />
+      <Column Name="samenvatting" Member="Samenvatting" Storage="_Samenvatting" DbType="VarChar(4096)" />
+      <Column Name="onderwerp" Member="Onderwerp" Storage="_Onderwerp" DbType="VarChar(40)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(1024)" />
+      <Association Name="FK_fv_activity_fv_activitystatustype" Member="Fv_activitystatustype" Storage="_Fv_activitystatustype" ThisKey="Activitystatustype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_activitytype" Member="Fv_activitytype" Storage="_Fv_activitytype" ThisKey="Activitytype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_capability" Member="Fv_capability" Storage="_Fv_capability" ThisKey="Capability_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_causecode" Member="Fv_causecode" Storage="_Fv_causecode" ThisKey="Causecode_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_customer" Member="Fv_customer" Storage="_Fv_customer" ThisKey="Customer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_customer_main" Member="Fv_customer_main" Storage="_Fv_customer_main" ThisKey="Customer_main_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_engineergroup" Member="Fv_engineergroup" Storage="_Fv_engineergroup" ThisKey="Engineergroup_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_ordersoort" Member="Fv_ordersoort" Storage="_Fv_ordersoort" ThisKey="Ordersoort_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_planner" Member="Fv_planner" Storage="_Fv_planner" ThisKey="Planner_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_priority" Member="Fv_priority" Storage="_Fv_priority" ThisKey="Priority_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_problemcode" Member="Fv_problemcode" Storage="_Fv_problemcode" ThisKey="Problemcode_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_productgroep" Member="Fv_productgroep" Storage="_Fv_productgroep" ThisKey="Productgroep_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_region" Member="Fv_region" Storage="_Fv_region" ThisKey="Region_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_serviceobject" Member="Fv_serviceobject" Storage="_Fv_serviceobject" ThisKey="Serviceobject_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_serviceorder" Member="Fv_serviceorder" Storage="_Fv_serviceorder" ThisKey="Serviceorder_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activity_fv_solutioncode" Member="Fv_solutioncode" Storage="_Fv_solutioncode" ThisKey="Solutioncode_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activityremark_fv_activity" Member="Fv_activityremark" Storage="_Fv_activityremark" ThisKey="Id" OtherKey="Activity_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_activitystatus_fv_activity" Member="Fv_activitystatus" Storage="_Fv_activitystatus" ThisKey="Id" OtherKey="Activity_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_debrief_fv_activity" Member="Fv_debrief" Storage="_Fv_debrief" ThisKey="Id" OtherKey="Activity_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_debriefoperations_fv_activity" Member="Fv_debriefoperations" Storage="_Fv_debriefoperations" ThisKey="Id" OtherKey="Activity_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_declaratie_fv_activity" Member="Fv_declaratie" Storage="_Fv_declaratie" ThisKey="Id" OtherKey="Activity_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_labour_detail_fv_activity" Member="Fv_labour_detail" Storage="_Fv_labour_detail" ThisKey="Id" OtherKey="Activity_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_labour_fv_activity" Member="Fv_labour" Storage="_Fv_labour" ThisKey="Id" OtherKey="Activity_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_materialmutation_fv_activity" Member="Fv_materialmutation" Storage="_Fv_materialmutation" ThisKey="Id" OtherKey="Activity_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activitylabour" Member="Fv_activitylabour">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_activitylabour">
+      <Column Name="activitystatustype_id" Member="Activitystatustype_id" Storage="_Activitystatustype_id" DbType="Int" />
+      <Column Name="labourstatustype_id" Member="Labourstatustype_id" Storage="_Labourstatustype_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activityremark" Member="Fv_activityremark">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_activityremark">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="remark_id" Member="Remark_id" Storage="_Remark_id" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Association Name="FK_fv_activityremark_fv_activity" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Activity_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activityremark_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activityremark_fv_remark" Member="Fv_remark" Storage="_Fv_remark" ThisKey="Remark_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activitystatus" Member="Fv_activitystatus">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_activitystatus">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="statusdt" Member="Statusdt" Storage="_Statusdt" DbType="DateTime" />
+      <Column Name="activitystatustype_id" Member="Activitystatustype_id" Storage="_Activitystatustype_id" DbType="Int" />
+      <Column Name="owner_id" Member="Owner_id" Storage="_Owner_id" DbType="Int" />
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="exported" Member="Exported" Storage="_Exported" DbType="Int NOT NULL" />
+      <Column Name="exporteddt" Member="Exporteddt" Storage="_Exporteddt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="cancelreason_id" Member="Cancelreason_id" Storage="_Cancelreason_id" DbType="Int" />
+      <Column Name="cancelnotes" Member="Cancelnotes" Storage="_Cancelnotes" DbType="VarChar(1024)" />
+      <Column Name="exportfilename" Member="Exportfilename" Storage="_Exportfilename" DbType="VarChar(50)" />
+      <Association Name="FK_fv_activitystatus_fv_activity" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Activity_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activitystatus_fv_activitystatustype" Member="Fv_activitystatustype" Storage="_Fv_activitystatustype" ThisKey="Activitystatustype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activitystatus_fv_cancelreason" Member="Fv_cancelreason" Storage="_Fv_cancelreason" ThisKey="Cancelreason_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activitystatus_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activitystatus_fv_planner" Member="Fv_planner" Storage="_Fv_planner" ThisKey="Planner_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activitystatusdirection" Member="Fv_activitystatusdirection">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_activitystatusdirection">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="from_activitystatustype_id" Member="From_activitystatustype_id" Storage="_From_activitystatustype_id" DbType="Int NOT NULL" />
+      <Column Name="to_activitystatustype_id" Member="To_activitystatustype_id" Storage="_To_activitystatustype_id" DbType="Int NOT NULL" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="allow_eng_chg" Member="Allow_eng_chg" Storage="_Allow_eng_chg" DbType="Int" />
+      <Column Name="allow_date_chg" Member="Allow_date_chg" Storage="_Allow_date_chg" DbType="Int" />
+      <Column Name="new_activity" Member="New_activity" Storage="_New_activity" DbType="Int" />
+      <Column Name="xml_allow_eng_chg" Member="Xml_allow_eng_chg" Storage="_Xml_allow_eng_chg" DbType="Int" />
+      <Association Name="FK_fv_activitystatusdirection_fv_activitystatustype" Member="Fv_activitystatustype" Storage="_Fv_activitystatustype" ThisKey="To_activitystatustype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_activitystatusdirection_fv_activitystatustype1" Member="From_activitystatustype_" Storage="_From_activitystatustype_" ThisKey="From_activitystatustype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_profilerights_fv_activitystatusdirection" Member="Fv_profilerights" Storage="_Fv_profilerights" ThisKey="Id" OtherKey="Activitystatusdirection_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activitystatustype" Member="Fv_activitystatustype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_activitystatustype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="color" Member="Color" Storage="_Color" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="dispatchstatus_id" Member="Dispatchstatus_id" Storage="_Dispatchstatus_id" DbType="Int" />
+      <Column Name="dispatchdebriefstatus_id" Member="Dispatchdebriefstatus_id" Storage="_Dispatchdebriefstatus_id" DbType="Int" />
+      <Column Name="status2client" Member="Status2client" Storage="_Status2client" DbType="Int NOT NULL" />
+      <Column Name="order2client" Member="Order2client" Storage="_Order2client" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_activity_fv_activitystatustype" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Activitystatustype_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_activitystatus_fv_activitystatustype" Member="Fv_activitystatus" Storage="_Fv_activitystatus" ThisKey="Id" OtherKey="Activitystatustype_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_activitystatusdirection_fv_activitystatustype" Member="Fv_activitystatusdirection" Storage="_Fv_activitystatusdirection" ThisKey="Id" OtherKey="To_activitystatustype_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_activitystatusdirection_fv_activitystatustype1" Member="Fv_activitystatusdirection_fv_activitystatustype1" Storage="_Fv_activitystatusdirection_fv_activitystatustype1" ThisKey="Id" OtherKey="From_activitystatustype_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_activitystatustype_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_paraafstatus_fv_activitystatustype" Member="Fv_paraafstatus" Storage="_Fv_paraafstatus" ThisKey="Id" OtherKey="Activitystatustype_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_activitytype" Member="Fv_activitytype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_activitytype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="duration" Member="Duration" Storage="_Duration" DbType="Real" />
+      <Column Name="responsetime" Member="Responsetime" Storage="_Responsetime" DbType="Real" />
+      <Column Name="billable" Member="Billable" Storage="_Billable" DbType="Int" />
+      <Column Name="color" Member="Color" Storage="_Color" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="flow_id" Member="Flow_id" Storage="_Flow_id" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_activitytype" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Activitytype_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_activitytype_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_operations_fv_activitytype" Member="Fv_operations" Storage="_Fv_operations" ThisKey="Id" OtherKey="Activitytype_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_paraafstatus_fv_activitytype" Member="Fv_paraafstatus" Storage="_Fv_paraafstatus" ThisKey="Id" OtherKey="Activitytype_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_set_fv_activitytype" Member="Fv_set" Storage="_Fv_set" ThisKey="Id" OtherKey="Activitytype_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_agendastatustype" Member="Fv_agendastatustype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_agendastatustype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="duration" Member="Duration" Storage="_Duration" DbType="Real" />
+      <Column Name="responsetime" Member="Responsetime" Storage="_Responsetime" DbType="Real" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_labour_fv_agendastatustype" Member="Fv_labour" Storage="_Fv_labour" ThisKey="Id" OtherKey="Agendastatustype_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_cancelreason" Member="Fv_cancelreason">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_cancelreason">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="activitytype_id" Member="Activitytype_id" Storage="_Activitytype_id" DbType="Int" />
+      <Column Name="activitystatustype_id" Member="Activitystatustype_id" Storage="_Activitystatustype_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Association Name="FK_fv_activitystatus_fv_cancelreason" Member="Fv_activitystatus" Storage="_Fv_activitystatus" ThisKey="Id" OtherKey="Cancelreason_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_capability" Member="Fv_capability">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_capability">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_capability" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Capability_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_capability_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineercapability_fv_capability" Member="Fv_engineercapability" Storage="_Fv_engineercapability" ThisKey="Id" OtherKey="Capability_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_causecode" Member="Fv_causecode">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_causecode">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_causecode" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Causecode_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_causecode_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_debrief_fv_causecode" Member="Fv_debrief" Storage="_Fv_debrief" ThisKey="Id" OtherKey="Causecode_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_color" Member="Fv_color">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_color">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_comm_sendchildtable" Member="Fv_comm_sendchildtable">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_comm_sendchildtable">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="comm_sendparenttable_id" Member="Comm_sendparenttable_id" Storage="_Comm_sendparenttable_id" DbType="Int NOT NULL" />
+      <Column Name="tablename" Member="Tablename" Storage="_Tablename" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="filter" Member="Filter" Storage="_Filter" DbType="VarChar(3000)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_comm_sendchildtable_fv_comm_sendparenttable" Member="Fv_comm_sendparenttable" Storage="_Fv_comm_sendparenttable" ThisKey="Comm_sendparenttable_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_comm_sendparenttable" Member="Fv_comm_sendparenttable">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_comm_sendparenttable">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="tablename" Member="Tablename" Storage="_Tablename" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lookupcolumn" Member="Lookupcolumn" Storage="_Lookupcolumn" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="lookupvalue" Member="Lookupvalue" Storage="_Lookupvalue" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_comm_sendchildtable_fv_comm_sendparenttable" Member="Fv_comm_sendchildtable" Storage="_Fv_comm_sendchildtable" ThisKey="Id" OtherKey="Comm_sendparenttable_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_commclienterror" Member="Fv_commclienterror">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_commclienterror">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime NOT NULL" />
+      <Column Name="messageid" Member="Messageid" Storage="_Messageid" DbType="VarChar(100)" />
+      <Column Name="retry" Member="Retry" Storage="_Retry" DbType="Int NOT NULL" />
+      <Column Name="body" Member="Body" Storage="_Body" DbType="Text" UpdateCheck="Never" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="remoteid" Member="Remoteid" Storage="_Remoteid" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_commengdata" Member="Fv_commengdata">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_commengdata">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="TableName" Member="TableName" Storage="_TableName" DbType="VarChar(50)" />
+      <Column Name="commengdata_id" Member="Commengdata_id" Storage="_Commengdata_id" DbType="Int" />
+      <Column Name="lookupcolumn" Member="Lookupcolumn" Storage="_Lookupcolumn" DbType="VarChar(50)" />
+      <Column Name="refcolumn" Member="Refcolumn" Storage="_Refcolumn" DbType="VarChar(50)" />
+      <Column Name="DataTable" Member="DataTable" Storage="_DataTable" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_commfield" Member="Fv_commfield">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_commfield">
+      <Column Name="TableID" Member="TableID" Storage="_TableID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="FieldID" Member="FieldID" Storage="_FieldID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="FieldName" Member="FieldName" Storage="_FieldName" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="FieldType" Member="FieldType" Storage="_FieldType" DbType="Int NOT NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_commsendwith" Member="Fv_commsendwith">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_commsendwith">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="TableIDmain" Member="TableIDmain" Storage="_TableIDmain" DbType="Int" />
+      <Column Name="FieldMain" Member="FieldMain" Storage="_FieldMain" DbType="VarChar(200)" />
+      <Column Name="TableIDsub" Member="TableIDsub" Storage="_TableIDsub" DbType="Int" />
+      <Column Name="FieldSub" Member="FieldSub" Storage="_FieldSub" DbType="VarChar(200)" />
+      <Column Name="AddQuery" Member="AddQuery" Storage="_AddQuery" DbType="VarChar(255)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_commtable" Member="Fv_commtable">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_commtable">
+      <Column Name="TableID" Member="TableID" Storage="_TableID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="TableName" Member="TableName" Storage="_TableName" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sendwithactivity" Member="Sendwithactivity" Storage="_Sendwithactivity" DbType="VarChar(1000)" />
+      <Column Name="sendwithserviceorder" Member="Sendwithserviceorder" Storage="_Sendwithserviceorder" DbType="VarChar(1000)" />
+      <Column Name="sendwithcustomer" Member="Sendwithcustomer" Storage="_Sendwithcustomer" DbType="VarChar(1000)" />
+      <Column Name="client2server" Member="Client2server" Storage="_Client2server" DbType="Int" />
+      <Column Name="sendwithlocation" Member="Sendwithlocation" Storage="_Sendwithlocation" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_contact" Member="Fv_contact">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_contact">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="customer_main_id" Member="Customer_main_id" Storage="_Customer_main_id" DbType="Int NOT NULL" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(50)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="contactfirstname" Member="Contactfirstname" Storage="_Contactfirstname" DbType="VarChar(50)" />
+      <Column Name="contactpresurname" Member="Contactpresurname" Storage="_Contactpresurname" DbType="VarChar(50)" />
+      <Column Name="contactsurname" Member="Contactsurname" Storage="_Contactsurname" DbType="VarChar(50)" />
+      <Column Name="contactinitials" Member="Contactinitials" Storage="_Contactinitials" DbType="VarChar(50)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Association Name="FK_fv_contact_fv_customer_main" Member="Fv_customer_main" Storage="_Fv_customer_main" ThisKey="Customer_main_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineer_contact_fv_contact" Member="Fv_engineer_contact" Storage="_Fv_engineer_contact" ThisKey="Id" OtherKey="Contact_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_contract" Member="Fv_contract">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_contract">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="startdt" Member="Startdt" Storage="_Startdt" DbType="DateTime" />
+      <Column Name="enddt" Member="Enddt" Storage="_Enddt" DbType="DateTime" />
+      <Column Name="installationdt" Member="Installationdt" Storage="_Installationdt" DbType="DateTime" />
+      <Column Name="warranty_id" Member="Warranty_id" Storage="_Warranty_id" DbType="Int" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="serviceobject_id" Member="Serviceobject_id" Storage="_Serviceobject_id" DbType="Int" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int" />
+      <Column Name="contracttype_id" Member="Contracttype_id" Storage="_Contracttype_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_contract_fv_contracttype" Member="Fv_contracttype" Storage="_Fv_contracttype" ThisKey="Contracttype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_contract_fv_customer" Member="Fv_customer" Storage="_Fv_customer" ThisKey="Customer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_contract_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_contract_fv_serviceobject" Member="Fv_serviceobject" Storage="_Fv_serviceobject" ThisKey="Serviceobject_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_contracttype" Member="Fv_contracttype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_contracttype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_contract_fv_contracttype" Member="Fv_contract" Storage="_Fv_contract" ThisKey="Id" OtherKey="Contracttype_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_contracttype_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_controltype" Member="Fv_controltype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_controltype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_createfield" Member="Fv_createfield">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_createfield">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="createtable_id" Member="Createtable_id" Storage="_Createtable_id" DbType="Int NOT NULL" />
+      <Column Name="FieldName" Member="FieldName" Storage="_FieldName" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="indexed" Member="Indexed" Storage="_Indexed" DbType="Int NOT NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_createjointindex" Member="Fv_createjointindex">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_createjointindex">
+      <Column Name="indexnumber" Member="Indexnumber" Storage="_Indexnumber" DbType="Int NOT NULL" />
+      <Column Name="createtable_id" Member="Createtable_id" Storage="_Createtable_id" DbType="Int NOT NULL" />
+      <Column Name="createfield_id" Member="Createfield_id" Storage="_Createfield_id" DbType="Int NOT NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_createtable" Member="Fv_createtable">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_createtable">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="TableName" Member="TableName" Storage="_TableName" DbType="VarChar(50)" />
+      <Column Name="Fill" Member="Fill" Storage="_Fill" DbType="Int NOT NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_currency" Member="Fv_currency">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_currency">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="symbol" Member="Symbol" Storage="_Symbol" DbType="VarChar(10)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_currency_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_material_fv_currency" Member="Fv_material" Storage="_Fv_material" ThisKey="Id" OtherKey="Currency_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_customer" Member="Fv_customer">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_customer">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="relationnumber" Member="Relationnumber" Storage="_Relationnumber" DbType="VarChar(40)" />
+      <Column Name="customername" Member="Customername" Storage="_Customername" DbType="VarChar(50)" />
+      <Column Name="contactfirstname" Member="Contactfirstname" Storage="_Contactfirstname" DbType="Bit" />
+      <Column Name="contactpresurname" Member="Contactpresurname" Storage="_Contactpresurname" DbType="Bit" />
+      <Column Name="contactsurname" Member="Contactsurname" Storage="_Contactsurname" DbType="Bit" />
+      <Column Name="contactinitials" Member="Contactinitials" Storage="_Contactinitials" DbType="Bit" />
+      <Column Name="contacttitle" Member="Contacttitle" Storage="_Contacttitle" DbType="Bit" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="Bit" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="Bit" />
+      <Column Name="state" Member="State" Storage="_State" DbType="Bit" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="Bit" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="Bit" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="Bit" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="Bit" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="Bit" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="NVarChar(6)" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="verantwoordelijk" Member="Verantwoordelijk" Storage="_Verantwoordelijk" DbType="Bit" />
+      <Column Name="parent_customer_id" Member="Parent_customer_id" Storage="_Parent_customer_id" DbType="Int" />
+      <Column Name="main" Member="Main" Storage="_Main" DbType="Int" />
+      <Column Name="customer_main_id" Member="Customer_main_id" Storage="_Customer_main_id" DbType="Int" />
+      <Column Name="categorie" Member="Categorie" Storage="_Categorie" DbType="VarChar(50)" />
+      <Column Name="boom" Member="Boom" Storage="_Boom" DbType="Bit" />
+      <Column Name="medewerker_id" Member="Medewerker_id" Storage="_Medewerker_id" DbType="Bit" />
+      <Column Name="responsetijd" Member="Responsetijd" Storage="_Responsetijd" DbType="DateTime" />
+      <Column Name="storingsclausule" Member="Storingsclausule" Storage="_Storingsclausule" DbType="VarChar(50)" />
+      <Column Name="klantcontacten" Member="Klantcontacten" Storage="_Klantcontacten" DbType="Bit" />
+      <Column Name="internecontacten" Member="Internecontacten" Storage="_Internecontacten" DbType="Bit" />
+      <Column Name="onderaannemers" Member="Onderaannemers" Storage="_Onderaannemers" DbType="Bit" />
+      <Column Name="responsetoelichting" Member="Responsetoelichting" Storage="_Responsetoelichting" DbType="VarChar(255)" />
+      <Association Name="FK_fv_activity_fv_customer" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Customer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_contract_fv_customer" Member="Fv_contract" Storage="_Fv_contract" ThisKey="Id" OtherKey="Customer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_customer_fv_customer_main" Member="Fv_customer_main" Storage="_Fv_customer_main" ThisKey="Customer_main_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineer_fp_fv_customer" Member="Fv_engineer_fp" Storage="_Fv_engineer_fp" ThisKey="Id" OtherKey="Customer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_serviceobject_fv_customer" Member="Fv_serviceobject" Storage="_Fv_serviceobject" ThisKey="Id" OtherKey="Customer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_serviceorder_fv_customer" Member="Fv_serviceorder" Storage="_Fv_serviceorder" ThisKey="Id" OtherKey="Customer_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_customer_addition" Member="Fv_customer_addition">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_customer_addition">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int NOT NULL" />
+      <Column Name="klantcontacten" Member="Klantcontacten" Storage="_Klantcontacten" DbType="VarChar(3000)" />
+      <Column Name="internecontacten" Member="Internecontacten" Storage="_Internecontacten" DbType="VarChar(3000)" />
+      <Column Name="onderaannemers" Member="Onderaannemers" Storage="_Onderaannemers" DbType="VarChar(3000)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_customer_main" Member="Fv_customer_main">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_customer_main">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="name" Member="Name" Storage="_Name" DbType="VarChar(50)" />
+      <Column Name="name2" Member="Name2" Storage="_Name2" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(50)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="Int" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(4)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_customer_main" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Customer_main_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_contact_fv_customer_main" Member="Fv_contact" Storage="_Fv_contact" ThisKey="Id" OtherKey="Customer_main_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_customer_fv_customer_main" Member="Fv_customer" Storage="_Fv_customer" ThisKey="Id" OtherKey="Customer_main_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineercustomer_fv_customer_main" Member="Fv_engineercustomer" Storage="_Fv_engineercustomer" ThisKey="Id" OtherKey="Customer_main_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_debrief" Member="Fv_debrief">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_debrief">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(1024)" />
+      <Column Name="signeng" Member="Signeng" Storage="_Signeng" DbType="VarChar(4000)" />
+      <Column Name="verifydt" Member="Verifydt" Storage="_Verifydt" DbType="DateTime" />
+      <Column Name="causecode_id" Member="Causecode_id" Storage="_Causecode_id" DbType="Int" />
+      <Column Name="problemcode_id" Member="Problemcode_id" Storage="_Problemcode_id" DbType="Int" />
+      <Column Name="solutioncode_id" Member="Solutioncode_id" Storage="_Solutioncode_id" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="signature" Member="Signature" Storage="_Signature" DbType="NText" UpdateCheck="Never" />
+      <Column Name="name_signature" Member="Name_signature" Storage="_Name_signature" DbType="VarChar(50)" />
+      <Column Name="startdt" Member="Startdt" Storage="_Startdt" DbType="DateTime" />
+      <Column Name="serviceobject_id" Member="Serviceobject_id" Storage="_Serviceobject_id" DbType="Int" />
+      <Column Name="overigekosten" Member="Overigekosten" Storage="_Overigekosten" DbType="VarChar(50)" />
+      <Column Name="overigekosten_bedrag" Member="Overigekosten_bedrag" Storage="_Overigekosten_bedrag" DbType="Real" />
+      <Column Name="verholpen" Member="Verholpen" Storage="_Verholpen" DbType="Int" />
+      <Column Name="verholpendt" Member="Verholpendt" Storage="_Verholpendt" DbType="DateTime" />
+      <Column Name="vervolgactie" Member="Vervolgactie" Storage="_Vervolgactie" DbType="Int" />
+      <Column Name="vervolg_medewerker_id" Member="Vervolg_medewerker_id" Storage="_Vervolg_medewerker_id" DbType="Int" />
+      <Column Name="vervolgactie_id" Member="Vervolgactie_id" Storage="_Vervolgactie_id" DbType="Int" />
+      <Column Name="vervolgnotes" Member="Vervolgnotes" Storage="_Vervolgnotes" DbType="VarChar(255)" />
+      <Column Name="signaturedt" Member="Signaturedt" Storage="_Signaturedt" DbType="DateTime" />
+      <Column Name="send_email" Member="Send_email" Storage="_Send_email" DbType="Int" />
+      <Column Name="send_specificatie" Member="Send_specificatie" Storage="_Send_specificatie" DbType="Int" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(250)" />
+      <Column Name="enddt" Member="Enddt" Storage="_Enddt" DbType="DateTime" />
+      <Column Name="chksign" Member="Chksign" Storage="_Chksign" DbType="VarChar(50)" />
+      <Column Name="scandt" Member="Scandt" Storage="_Scandt" DbType="DateTime" />
+      <Column Name="scannr" Member="Scannr" Storage="_Scannr" DbType="VarChar(50)" />
+      <Column Name="paraafstatus_id" Member="Paraafstatus_id" Storage="_Paraafstatus_id" DbType="Int" />
+      <Column Name="opdrachtnummer" Member="Opdrachtnummer" Storage="_Opdrachtnummer" DbType="VarChar(50)" />
+      <Column Name="cc" Member="Cc" Storage="_Cc" DbType="VarChar(250)" />
+      <Column Name="chknotes" Member="Chknotes" Storage="_Chknotes" DbType="Int" />
+      <Column Name="restduur" Member="Restduur" Storage="_Restduur" DbType="Real" />
+      <Column Name="extra_notes" Member="Extra_notes" Storage="_Extra_notes" DbType="VarChar(1000)" />
+      <Association Name="FK_fv_debrief_fv_activity" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Activity_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_debrief_fv_causecode" Member="Fv_causecode" Storage="_Fv_causecode" ThisKey="Causecode_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_debrief_fv_medewerker" Member="Fv_medewerker" Storage="_Fv_medewerker" ThisKey="Vervolg_medewerker_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_debrief_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_debrief_fv_paraafstatus" Member="Fv_paraafstatus" Storage="_Fv_paraafstatus" ThisKey="Paraafstatus_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_debrief_fv_problemcode" Member="Fv_problemcode" Storage="_Fv_problemcode" ThisKey="Problemcode_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_debrief_fv_serviceobject" Member="Fv_serviceobject" Storage="_Fv_serviceobject" ThisKey="Serviceobject_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_debrief_fv_solutioncode" Member="Fv_solutioncode" Storage="_Fv_solutioncode" ThisKey="Solutioncode_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_debrief_teksten" Member="Fv_debrief_teksten">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_debrief_teksten">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="exported" Member="Exported" Storage="_Exported" DbType="Int NOT NULL" />
+      <Column Name="exporteddt" Member="Exporteddt" Storage="_Exporteddt" DbType="DateTime" />
+      <Column Name="exportfilename" Member="Exportfilename" Storage="_Exportfilename" DbType="VarChar(50)" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Association Name="FK_fv_debrief_teksten_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_debriefoperations" Member="Fv_debriefoperations">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_debriefoperations">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier NOT NULL" />
+      <Column Name="operations_id" Member="Operations_id" Storage="_Operations_id" DbType="Int" />
+      <Column Name="debriefvalue" Member="Debriefvalue" Storage="_Debriefvalue" DbType="VarChar(50)" />
+      <Column Name="done" Member="Done" Storage="_Done" DbType="VarChar(50)" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="deb_object" Member="Deb_object" Storage="_Deb_object" DbType="UniqueIdentifier" />
+      <Column Name="selected" Member="Selected" Storage="_Selected" DbType="VarChar(50)" />
+      <Association Name="FK_fv_debriefoperations_fv_activity" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Activity_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_debriefoperations_fv_operations" Member="Fv_operations" Storage="_Fv_operations" ThisKey="Operations_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_declaratie" Member="Fv_declaratie">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_declaratie">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="looncomponent_mapping_id" Member="Looncomponent_mapping_id" Storage="_Looncomponent_mapping_id" DbType="Int" />
+      <Column Name="prestatiesoort" Member="Prestatiesoort" Storage="_Prestatiesoort" DbType="VarChar(50)" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="werkdt" Member="Werkdt" Storage="_Werkdt" DbType="DateTime" />
+      <Column Name="aantal" Member="Aantal" Storage="_Aantal" DbType="DateTime" />
+      <Column Name="omschrijving" Member="Omschrijving" Storage="_Omschrijving" DbType="VarChar(50)" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="rubricering" Member="Rubricering" Storage="_Rubricering" DbType="VarChar(50)" />
+      <Column Name="message" Member="Message" Storage="_Message" DbType="VarChar(255)" />
+      <Column Name="keurregistratie" Member="Keurregistratie" Storage="_Keurregistratie" DbType="VarChar(50)" />
+      <Column Name="orderoms" Member="Orderoms" Storage="_Orderoms" DbType="VarChar(50)" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="ReisurenTvT" Member="ReisurenTvT" Storage="_ReisurenTvT" DbType="Int" />
+      <Column Name="overurentvt" Member="Overurentvt" Storage="_Overurentvt" DbType="Int" />
+      <Column Name="consignatie" Member="Consignatie" Storage="_Consignatie" DbType="Int" />
+      <Association Name="FK_fv_declaratie_fv_activity" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Activity_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_declaratie_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_declaratie_fv_looncomponent_mapping" Member="Fv_looncomponent_mapping" Storage="_Fv_looncomponent_mapping" ThisKey="Looncomponent_mapping_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineer" Member="Fv_engineer">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_engineer">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="username" Member="Username" Storage="_Username" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="password" Member="Password" Storage="_Password" DbType="VarChar(50)" />
+      <Column Name="firstname" Member="Firstname" Storage="_Firstname" DbType="VarChar(50)" />
+      <Column Name="presurname" Member="Presurname" Storage="_Presurname" DbType="VarChar(20)" />
+      <Column Name="surname" Member="Surname" Storage="_Surname" DbType="VarChar(50)" />
+      <Column Name="initials" Member="Initials" Storage="_Initials" DbType="VarChar(50)" />
+      <Column Name="title" Member="Title" Storage="_Title" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(10)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="VarChar(50)" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(15)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="modemnumber" Member="Modemnumber" Storage="_Modemnumber" DbType="VarChar(15)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="engineergroup_id" Member="Engineergroup_id" Storage="_Engineergroup_id" DbType="Int" />
+      <Column Name="language_id" Member="Language_id" Storage="_Language_id" DbType="VarChar(10)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="def_remark_category_id" Member="Def_remark_category_id" Storage="_Def_remark_category_id" DbType="Int" />
+      <Column Name="ontvangst_autorisatie" Member="Ontvangst_autorisatie" Storage="_Ontvangst_autorisatie" DbType="Int" />
+      <Column Name="bestel_autorisatie" Member="Bestel_autorisatie" Storage="_Bestel_autorisatie" DbType="Int" />
+      <Column Name="def_region_id" Member="Def_region_id" Storage="_Def_region_id" DbType="Int" />
+      <Column Name="engineer_uses_PDA" Member="Engineer_uses_PDA" Storage="_Engineer_uses_PDA" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_engineer" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_activitystatus_fv_engineer" Member="Fv_activitystatus" Storage="_Fv_activitystatus" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_debrief_teksten_fv_engineer" Member="Fv_debrief_teksten" Storage="_Fv_debrief_teksten" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_declaratie_fv_engineer" Member="Fv_declaratie" Storage="_Fv_declaratie" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineer_contact_fv_engineer" Member="Fv_engineer_contact" Storage="_Fv_engineer_contact" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineer_eq_fv_engineer" Member="Fv_engineer_eq" Storage="_Fv_engineer_eq" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineer_fp_fv_engineer" Member="Fv_engineer_fp" Storage="_Fv_engineer_fp" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineer_fv_engineergroup" Member="Fv_engineergroup" Storage="_Fv_engineergroup" ThisKey="Engineergroup_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineer_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineer_fv_region" Member="Fv_region" Storage="_Fv_region" ThisKey="Def_region_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineer_fv_remark_category" Member="Fv_remark_category" Storage="_Fv_remark_category" ThisKey="Def_remark_category_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineercapability_fv_engineer" Member="Fv_engineercapability" Storage="_Fv_engineercapability" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineercustomer_fv_engineer" Member="Fv_engineercustomer" Storage="_Fv_engineercustomer" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineerregion_fv_engineer" Member="Fv_engineerregion" Storage="_Fv_engineerregion" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineerstatus_fv_engineer" Member="Fv_engineerstatus" Storage="_Fv_engineerstatus" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" IsUnique="true" />
+      <Association Name="FK_fv_labour_fv_engineer" Member="Fv_labour" Storage="_Fv_labour" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_location_fv_engineer" Member="Fv_location" Storage="_Fv_location" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_materialmutation_fv_engineer" Member="Fv_materialmutation" Storage="_Fv_materialmutation" ThisKey="Id" OtherKey="Engineer_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_serviceorder_fv_engineer" Member="Fv_serviceorder" Storage="_Fv_serviceorder" ThisKey="Id" OtherKey="Mainengineer_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineer_contact" Member="Fv_engineer_contact">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_engineer_contact">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="contact_id" Member="Contact_id" Storage="_Contact_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="temp" Member="Temp" Storage="_Temp" DbType="Int" />
+      <Association Name="FK_fv_engineer_contact_fv_contact" Member="Fv_contact" Storage="_Fv_contact" ThisKey="Contact_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineer_contact_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineer_eq" Member="Fv_engineer_eq">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_engineer_eq">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="serviceobject_id" Member="Serviceobject_id" Storage="_Serviceobject_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="temp" Member="Temp" Storage="_Temp" DbType="Int" />
+      <Association Name="FK_fv_engineer_eq_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineer_eq_fv_serviceobject" Member="Fv_serviceobject" Storage="_Fv_serviceobject" ThisKey="Serviceobject_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineer_fp" Member="Fv_engineer_fp">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_engineer_fp">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="temp" Member="Temp" Storage="_Temp" DbType="Int" />
+      <Association Name="FK_fv_engineer_fp_fv_customer" Member="Fv_customer" Storage="_Fv_customer" ThisKey="Customer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineer_fp_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineercapability" Member="Fv_engineercapability">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_engineercapability">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="capability_id" Member="Capability_id" Storage="_Capability_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Association Name="FK_fv_engineercapability_fv_capability" Member="Fv_capability" Storage="_Fv_capability" ThisKey="Capability_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineercapability_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineercapability_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineercustomer" Member="Fv_engineercustomer">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_engineercustomer">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="customer_main_id" Member="Customer_main_id" Storage="_Customer_main_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="temp" Member="Temp" Storage="_Temp" DbType="Int" />
+      <Association Name="FK_fv_engineercustomer_fv_customer_main" Member="Fv_customer_main" Storage="_Fv_customer_main" ThisKey="Customer_main_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineercustomer_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineergroup" Member="Fv_engineergroup">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_engineergroup">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="color" Member="Color" Storage="_Color" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(255)" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_engineergroup" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Engineergroup_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineer_fv_engineergroup" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Id" OtherKey="Engineergroup_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineergroup_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineerregion" Member="Fv_engineerregion">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_engineerregion">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Association Name="FK_fv_engineerregion_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_engineerregion_fv_region" Member="Fv_region" Storage="_Fv_region" ThisKey="Region_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_engineerstatus" Member="Fv_engineerstatus">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_engineerstatus">
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="last_zip" Member="Last_zip" Storage="_Last_zip" DbType="VarChar(50)" />
+      <Column Name="x" Member="X" Storage="_X" DbType="Int" />
+      <Column Name="y" Member="Y" Storage="_Y" DbType="Int" />
+      <Column Name="labourstatus_id" Member="Labourstatus_id" Storage="_Labourstatus_id" DbType="Int" />
+      <Column Name="last_update" Member="Last_update" Storage="_Last_update" DbType="DateTime" />
+      <Association Name="FK_fv_engineerstatus_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_escalations" Member="Fv_escalations">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_escalations">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="query" Member="Query" Storage="_Query" DbType="VarChar(1000)" />
+      <Column Name="target_page" Member="Target_page" Storage="_Target_page" DbType="VarChar(50)" />
+      <Column Name="level" Member="Level" Storage="_Level" DbType="Int" />
+      <Column Name="width" Member="Width" Storage="_Width" DbType="VarChar(50)" />
+      <Column Name="target_xml" Member="Target_xml" Storage="_Target_xml" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int NOT NULL" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int NOT NULL" />
+      <Column Name="engineer_selection" Member="Engineer_selection" Storage="_Engineer_selection" DbType="Int" />
+      <Column Name="region_selection" Member="Region_selection" Storage="_Region_selection" DbType="Int NOT NULL" />
+      <Column Name="planner_selection" Member="Planner_selection" Storage="_Planner_selection" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_escalations_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_generate_guid" Member="Fv_generate_guid">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_generate_guid">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int" />
+      <Column Name="guid" Member="Guid" Storage="_Guid" DbType="UniqueIdentifier" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_grouprelation" Member="Fv_grouprelation">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_grouprelation">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" />
+      <Column Name="plannergroup_id" Member="Plannergroup_id" Storage="_Plannergroup_id" DbType="Int NOT NULL" />
+      <Column Name="engineergroup_id" Member="Engineergroup_id" Storage="_Engineergroup_id" DbType="Int NOT NULL" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_history" Member="Fv_history">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_history">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(100)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="serviceorder_id" Member="Serviceorder_id" Storage="_Serviceorder_id" DbType="UniqueIdentifier" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="historydt" Member="Historydt" Storage="_Historydt" DbType="DateTime" />
+      <Column Name="serviceobject_id" Member="Serviceobject_id" Storage="_Serviceobject_id" DbType="Int" />
+      <Association Name="FK_fv_history_fv_serviceorder" Member="Fv_serviceorder" Storage="_Fv_serviceorder" ThisKey="Serviceorder_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_labour" Member="Fv_labour">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_labour">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="startdt" Member="Startdt" Storage="_Startdt" DbType="DateTime" />
+      <Column Name="enddt" Member="Enddt" Storage="_Enddt" DbType="DateTime" />
+      <Column Name="rostartdt" Member="Rostartdt" Storage="_Rostartdt" DbType="DateTime" />
+      <Column Name="roenddt" Member="Roenddt" Storage="_Roenddt" DbType="DateTime" />
+      <Column Name="mileage" Member="Mileage" Storage="_Mileage" DbType="Int" />
+      <Column Name="verifydt" Member="Verifydt" Storage="_Verifydt" DbType="DateTime" />
+      <Column Name="labourstatus_id" Member="Labourstatus_id" Storage="_Labourstatus_id" DbType="Int" />
+      <Column Name="agendastatustype_id" Member="Agendastatustype_id" Storage="_Agendastatustype_id" DbType="Int" />
+      <Column Name="subnumber" Member="Subnumber" Storage="_Subnumber" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="medewerker_id" Member="Medewerker_id" Storage="_Medewerker_id" DbType="Int" />
+      <Association Name="FK_fv_labour_detail_fv_labour" Member="Fv_labour_detail" Storage="_Fv_labour_detail" ThisKey="Id" OtherKey="Labour_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_labour_fv_activity" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Activity_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_labour_fv_agendastatustype" Member="Fv_agendastatustype" Storage="_Fv_agendastatustype" ThisKey="Agendastatustype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_labour_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_labour_fv_labourstatus" Member="Fv_labourstatus" Storage="_Fv_labourstatus" ThisKey="Labourstatus_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_labour_fv_medewerker" Member="Fv_medewerker" Storage="_Fv_medewerker" ThisKey="Medewerker_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_labour_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_labour_detail" Member="Fv_labour_detail">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_labour_detail">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="labour_id" Member="Labour_id" Storage="_Labour_id" DbType="UniqueIdentifier" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="labour_type_id" Member="Labour_type_id" Storage="_Labour_type_id" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="uren" Member="Uren" Storage="_Uren" DbType="DateTime" />
+      <Association Name="FK_fv_labour_detail_fv_activity" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Activity_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_labour_detail_fv_labour" Member="Fv_labour" Storage="_Fv_labour" ThisKey="Labour_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_labour_detail_fv_labour_type" Member="Fv_labour_type" Storage="_Fv_labour_type" ThisKey="Labour_type_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_labour_type" Member="Fv_labour_type">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_labour_type">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Association Name="FK_fv_labour_detail_fv_labour_type" Member="Fv_labour_detail" Storage="_Fv_labour_detail" ThisKey="Id" OtherKey="Labour_type_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_labourstatus" Member="Fv_labourstatus">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_labourstatus">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_labour_fv_labourstatus" Member="Fv_labour" Storage="_Fv_labour" ThisKey="Id" OtherKey="Labourstatus_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_labourstatus_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_lngcaption" Member="Fv_lngcaption">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_lngcaption">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Association Name="FK_fv_lngcaptionlngtype_fv_lngcaption" Member="Fv_lngcaptionlngtype" Storage="_Fv_lngcaptionlngtype" ThisKey="Id" OtherKey="Lngcaption_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_lngsubsetlngcaption_fv_lngcaption" Member="Fv_lngsubsetlngcaption" Storage="_Fv_lngsubsetlngcaption" ThisKey="Id" OtherKey="Lngcaption_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_lngcaptionlngtype" Member="Fv_lngcaptionlngtype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_lngcaptionlngtype">
+      <Column Name="lngcaption_id" Member="Lngcaption_id" Storage="_Lngcaption_id" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="lngtype_id" Member="Lngtype_id" Storage="_Lngtype_id" DbType="VarChar(3) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="FK_fv_lngcaptionlngtype_fv_lngcaption" Member="Fv_lngcaption" Storage="_Fv_lngcaption" ThisKey="Lngcaption_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_lngcaptionlngtype_fv_lngtype" Member="Fv_lngtype" Storage="_Fv_lngtype" ThisKey="Lngtype_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_lngsubset" Member="Fv_lngsubset">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_lngsubset">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Association Name="FK_fv_lngsubsetlngcaption_fv_lngsubset" Member="Fv_lngsubsetlngcaption" Storage="_Fv_lngsubsetlngcaption" ThisKey="Id" OtherKey="Lngsubset_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_lngsubsetlngcaption" Member="Fv_lngsubsetlngcaption">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_lngsubsetlngcaption">
+      <Column Name="lngsubset_id" Member="Lngsubset_id" Storage="_Lngsubset_id" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="lngcaption_id" Member="Lngcaption_id" Storage="_Lngcaption_id" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Association Name="FK_fv_lngsubsetlngcaption_fv_lngcaption" Member="Fv_lngcaption" Storage="_Fv_lngcaption" ThisKey="Lngcaption_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_lngsubsetlngcaption_fv_lngsubset" Member="Fv_lngsubset" Storage="_Fv_lngsubset" ThisKey="Lngsubset_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_lngtype" Member="Fv_lngtype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_lngtype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="VarChar(3) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Association Name="FK_fv_lngcaptionlngtype_fv_lngtype" Member="Fv_lngcaptionlngtype" Storage="_Fv_lngcaptionlngtype" ThisKey="Id" OtherKey="Lngtype_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_location" Member="Fv_location">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_location">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="locationtype_id" Member="Locationtype_id" Storage="_Locationtype_id" DbType="Int" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_location_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_location_fv_locationtype" Member="Fv_locationtype" Storage="_Fv_locationtype" ThisKey="Locationtype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_location_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_location" Member="Fv_materialmutation" Storage="_Fv_materialmutation" ThisKey="Id" OtherKey="Location_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_locationtype" Member="Fv_locationtype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_locationtype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_location_fv_locationtype" Member="Fv_location" Storage="_Fv_location" ThisKey="Id" OtherKey="Locationtype_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_locationtype_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_locationtype" Member="Fv_materialmutation" Storage="_Fv_materialmutation" ThisKey="Id" OtherKey="Fromlocation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_materialmutation_fv_locationtype1" Member="Fv_materialmutation_fv_locationtype1" Storage="_Fv_materialmutation_fv_locationtype1" ThisKey="Id" OtherKey="Tolocation_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_locationtypemutation" Member="Fv_locationtypemutation">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_locationtypemutation">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="orderrelated" Member="Orderrelated" Storage="_Orderrelated" DbType="Int NOT NULL" />
+      <Column Name="multilocationtype_id" Member="Multilocationtype_id" Storage="_Multilocationtype_id" DbType="Int" />
+      <Column Name="fromlocationtype_id" Member="Fromlocationtype_id" Storage="_Fromlocationtype_id" DbType="Int NOT NULL" />
+      <Column Name="tolocationtype_id" Member="Tolocationtype_id" Storage="_Tolocationtype_id" DbType="Int NOT NULL" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="code" Member="Code" Storage="_Code" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_materialmutation_fv_locationtypemutation" Member="Fv_materialmutation" Storage="_Fv_materialmutation" ThisKey="Id" OtherKey="Locationtypemutation_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_looncomponent" Member="Fv_looncomponent">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_looncomponent">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="prestatiesoort" Member="Prestatiesoort" Storage="_Prestatiesoort" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Association Name="FK_fv_looncomponent_mapping_fv_looncomponent" Member="Fv_looncomponent_mapping" Storage="_Fv_looncomponent_mapping" ThisKey="Id" OtherKey="Looncomponent_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_looncomponent_mapping" Member="Fv_looncomponent_mapping">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_looncomponent_mapping">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="looncomponent_id" Member="Looncomponent_id" Storage="_Looncomponent_id" DbType="Int" />
+      <Column Name="veldindicatie" Member="Veldindicatie" Storage="_Veldindicatie" DbType="VarChar(50)" />
+      <Column Name="sortorder" Member="Sortorder" Storage="_Sortorder" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Association Name="FK_fv_declaratie_fv_looncomponent_mapping" Member="Fv_declaratie" Storage="_Fv_declaratie" ThisKey="Id" OtherKey="Looncomponent_mapping_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_looncomponent_mapping_fv_looncomponent" Member="Fv_looncomponent" Storage="_Fv_looncomponent" ThisKey="Looncomponent_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_material" Member="Fv_material">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_material">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="materialtype_id" Member="Materialtype_id" Storage="_Materialtype_id" DbType="Int" />
+      <Column Name="price" Member="Price" Storage="_Price" DbType="Real" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="unit_id" Member="Unit_id" Storage="_Unit_id" DbType="Int" />
+      <Column Name="currency_id" Member="Currency_id" Storage="_Currency_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="supplier_id" Member="Supplier_id" Storage="_Supplier_id" DbType="Int" />
+      <Column Name="powersearch" Member="Powersearch" Storage="_Powersearch" DbType="VarChar(255)" />
+      <Column Name="hitrate" Member="Hitrate" Storage="_Hitrate" DbType="Int" />
+      <Column Name="bestelnr" Member="Bestelnr" Storage="_Bestelnr" DbType="VarChar(50)" />
+      <Column Name="levkaal" Member="Levkaal" Storage="_Levkaal" DbType="VarChar(50)" />
+      <Column Name="fabkaal" Member="Fabkaal" Storage="_Fabkaal" DbType="VarChar(50)" />
+      <Association Name="FK_fv_material_fv_currency" Member="Fv_currency" Storage="_Fv_currency" ThisKey="Currency_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_material_fv_materialtype" Member="Fv_materialtype" Storage="_Fv_materialtype" ThisKey="Materialtype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_material_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_material_fv_supplier" Member="Fv_supplier" Storage="_Fv_supplier" ThisKey="Supplier_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_material_fv_unit" Member="Fv_unit" Storage="_Fv_unit" ThisKey="Unit_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_material" Member="Fv_materialmutation" Storage="_Fv_materialmutation" ThisKey="Id" OtherKey="Material_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_serviceobject_fv_material" Member="Fv_serviceobject" Storage="_Fv_serviceobject" ThisKey="Id" OtherKey="Material_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_materialgroup" Member="Fv_materialgroup">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_materialgroup">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="category" Member="Category" Storage="_Category" DbType="VarChar(1)" />
+      <Column Name="parent_id" Member="Parent_id" Storage="_Parent_id" DbType="Int" />
+      <Column Name="supplier_id" Member="Supplier_id" Storage="_Supplier_id" DbType="Int" />
+      <Column Name="material_external_id" Member="Material_external_id" Storage="_Material_external_id" DbType="VarChar(50)" />
+      <Association Name="FK_fv_materialgroup_fv_supplier" Member="Fv_supplier" Storage="_Fv_supplier" ThisKey="Supplier_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_materialmutation" Member="Fv_materialmutation">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_materialmutation">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="serviceorder_id" Member="Serviceorder_id" Storage="_Serviceorder_id" DbType="UniqueIdentifier" />
+      <Column Name="mutationdt" Member="Mutationdt" Storage="_Mutationdt" DbType="DateTime" />
+      <Column Name="quantity" Member="Quantity" Storage="_Quantity" DbType="Real" />
+      <Column Name="material_id" Member="Material_id" Storage="_Material_id" DbType="Int" />
+      <Column Name="locationtypemutation_id" Member="Locationtypemutation_id" Storage="_Locationtypemutation_id" DbType="Int" />
+      <Column Name="location_id" Member="Location_id" Storage="_Location_id" DbType="Int" />
+      <Column Name="verifydt" Member="Verifydt" Storage="_Verifydt" DbType="DateTime" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="warranty_id" Member="Warranty_id" Storage="_Warranty_id" DbType="Int" />
+      <Column Name="fromlocation_id" Member="Fromlocation_id" Storage="_Fromlocation_id" DbType="Int" />
+      <Column Name="tolocation_id" Member="Tolocation_id" Storage="_Tolocation_id" DbType="Int" />
+      <Column Name="materialmutationreason_id" Member="Materialmutationreason_id" Storage="_Materialmutationreason_id" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="exported" Member="Exported" Storage="_Exported" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="supplier_name" Member="Supplier_name" Storage="_Supplier_name" DbType="VarChar(50)" />
+      <Column Name="bestelnr" Member="Bestelnr" Storage="_Bestelnr" DbType="VarChar(50)" />
+      <Column Name="price" Member="Price" Storage="_Price" DbType="Real" />
+      <Column Name="n_price" Member="N_price" Storage="_N_price" DbType="Real" />
+      <Column Name="type" Member="Type" Storage="_Type" DbType="VarChar(1)" />
+      <Column Name="purchaseorderpositie" Member="Purchaseorderpositie" Storage="_Purchaseorderpositie" DbType="VarChar(50)" />
+      <Association Name="FK_fv_materialmutation_fv_activity" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Activity_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Engineer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_location" Member="Fv_location" Storage="_Fv_location" ThisKey="Location_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_locationtype" Member="Fv_locationtype" Storage="_Fv_locationtype" ThisKey="Fromlocation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_locationtype1" Member="Tolocation_" Storage="_Tolocation_" ThisKey="Tolocation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_locationtypemutation" Member="Fv_locationtypemutation" Storage="_Fv_locationtypemutation" ThisKey="Locationtypemutation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_material" Member="Fv_material" Storage="_Fv_material" ThisKey="Material_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_materialmutationreason" Member="Fv_materialmutationreason" Storage="_Fv_materialmutationreason" ThisKey="Materialmutationreason_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_serviceorder" Member="Fv_serviceorder" Storage="_Fv_serviceorder" ThisKey="Serviceorder_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_materialmutation_fv_warranty" Member="Fv_warranty" Storage="_Fv_warranty" ThisKey="Warranty_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_materialmutationreason" Member="Fv_materialmutationreason">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_materialmutationreason">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="billable" Member="Billable" Storage="_Billable" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_materialmutation_fv_materialmutationreason" Member="Fv_materialmutation" Storage="_Fv_materialmutation" ThisKey="Id" OtherKey="Materialmutationreason_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_materialmutationreason_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_materialtype" Member="Fv_materialtype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_materialtype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_material_fv_materialtype" Member="Fv_material" Storage="_Fv_material" ThisKey="Id" OtherKey="Materialtype_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_mededeling" Member="Fv_mededeling">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_mededeling">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(255)" />
+      <Column Name="gelezen" Member="Gelezen" Storage="_Gelezen" DbType="Int" />
+      <Column Name="meldingdt" Member="Meldingdt" Storage="_Meldingdt" DbType="DateTime" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_medewerker" Member="Fv_medewerker">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_medewerker">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="username" Member="Username" Storage="_Username" DbType="VarChar(50)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(50)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Association Name="FK_fv_debrief_fv_medewerker" Member="Fv_debrief" Storage="_Fv_debrief" ThisKey="Id" OtherKey="Vervolg_medewerker_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_labour_fv_medewerker" Member="Fv_labour" Storage="_Fv_labour" ThisKey="Id" OtherKey="Medewerker_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_operations" Member="Fv_operations">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_operations">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(100)" />
+      <Column Name="valuetype_id" Member="Valuetype_id" Storage="_Valuetype_id" DbType="Int" />
+      <Column Name="orderby" Member="Orderby" Storage="_Orderby" DbType="Int" />
+      <Column Name="activitytype_id" Member="Activitytype_id" Storage="_Activitytype_id" DbType="Int" />
+      <Column Name="meetpunset_id" Member="Meetpunset_id" Storage="_Meetpunset_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="requierd" Member="Requierd" Storage="_Requierd" DbType="Int" />
+      <Association Name="FK_fv_debriefoperations_fv_operations" Member="Fv_debriefoperations" Storage="_Fv_debriefoperations" ThisKey="Id" OtherKey="Operations_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_operations_fv_activitytype" Member="Fv_activitytype" Storage="_Fv_activitytype" ThisKey="Activitytype_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_orderlists" Member="Fv_orderlists">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_orderlists">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="query" Member="Query" Storage="_Query" DbType="VarChar(1000)" />
+      <Column Name="target_page" Member="Target_page" Storage="_Target_page" DbType="VarChar(50)" />
+      <Column Name="width" Member="Width" Storage="_Width" DbType="VarChar(50)" />
+      <Column Name="target_xml" Member="Target_xml" Storage="_Target_xml" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int NOT NULL" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_orderlists_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_ordersoort" Member="Fv_ordersoort">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_ordersoort">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="color" Member="Color" Storage="_Color" DbType="VarChar(50)" />
+      <Association Name="FK_fv_activity_fv_ordersoort" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Ordersoort_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_organisation" Member="Fv_organisation">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_organisation">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="name" Member="Name" Storage="_Name" DbType="VarChar(50)" />
+      <Column Name="contact" Member="Contact" Storage="_Contact" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(10)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="VarChar(50)" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(50)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(50)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_organisation" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_activityremark_fv_organisation" Member="Fv_activityremark" Storage="_Fv_activityremark" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_activitystatustype_fv_organisation" Member="Fv_activitystatustype" Storage="_Fv_activitystatustype" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_activitytype_fv_organisation" Member="Fv_activitytype" Storage="_Fv_activitytype" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_capability_fv_organisation" Member="Fv_capability" Storage="_Fv_capability" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_causecode_fv_organisation" Member="Fv_causecode" Storage="_Fv_causecode" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_contract_fv_organisation" Member="Fv_contract" Storage="_Fv_contract" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_contracttype_fv_organisation" Member="Fv_contracttype" Storage="_Fv_contracttype" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_currency_fv_organisation" Member="Fv_currency" Storage="_Fv_currency" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_debrief_fv_organisation" Member="Fv_debrief" Storage="_Fv_debrief" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineer_fv_organisation" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineercapability_fv_organisation" Member="Fv_engineercapability" Storage="_Fv_engineercapability" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineergroup_fv_organisation" Member="Fv_engineergroup" Storage="_Fv_engineergroup" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_escalations_fv_organisation" Member="Fv_escalations" Storage="_Fv_escalations" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_labour_fv_organisation" Member="Fv_labour" Storage="_Fv_labour" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_labourstatus_fv_organisation" Member="Fv_labourstatus" Storage="_Fv_labourstatus" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_location_fv_organisation" Member="Fv_location" Storage="_Fv_location" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_locationtype_fv_organisation" Member="Fv_locationtype" Storage="_Fv_locationtype" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_material_fv_organisation" Member="Fv_material" Storage="_Fv_material" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_materialmutation_fv_organisation" Member="Fv_materialmutation" Storage="_Fv_materialmutation" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_materialmutationreason_fv_organisation" Member="Fv_materialmutationreason" Storage="_Fv_materialmutationreason" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_orderlists_fv_organisation" Member="Fv_orderlists" Storage="_Fv_orderlists" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_ownertype_fv_organisation" Member="Fv_ownertype" Storage="_Fv_ownertype" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_planner_fv_organisation" Member="Fv_planner" Storage="_Fv_planner" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_plannergroup_fv_organisation" Member="Fv_plannergroup" Storage="_Fv_plannergroup" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_priority_fv_organisation" Member="Fv_priority" Storage="_Fv_priority" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_problemcode_fv_organisation" Member="Fv_problemcode" Storage="_Fv_problemcode" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_reports_fv_organisation" Member="Fv_reports" Storage="_Fv_reports" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_solutioncode_fv_organisation" Member="Fv_solutioncode" Storage="_Fv_solutioncode" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_unit_fv_organisation" Member="Fv_unit" Storage="_Fv_unit" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_warranty_fv_organisation" Member="Fv_warranty" Storage="_Fv_warranty" ThisKey="Id" OtherKey="Organisation_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_ownertype" Member="Fv_ownertype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_ownertype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_ownertype_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_serviceobject_fv_ownertype" Member="Fv_serviceobject" Storage="_Fv_serviceobject" ThisKey="Id" OtherKey="Ownertype_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_paraafstatus" Member="Fv_paraafstatus">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_paraafstatus">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="activitytype_id" Member="Activitytype_id" Storage="_Activitytype_id" DbType="Int" />
+      <Column Name="activitystatustype_id" Member="Activitystatustype_id" Storage="_Activitystatustype_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Association Name="FK_fv_debrief_fv_paraafstatus" Member="Fv_debrief" Storage="_Fv_debrief" ThisKey="Id" OtherKey="Paraafstatus_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_paraafstatus_fv_activitystatustype" Member="Fv_activitystatustype" Storage="_Fv_activitystatustype" ThisKey="Activitystatustype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_paraafstatus_fv_activitytype" Member="Fv_activitytype" Storage="_Fv_activitytype" ThisKey="Activitytype_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_param" Member="Fv_param">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_param">
+      <Column Name="param" Member="Param" Storage="_Param" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="paramvalue" Member="Paramvalue" Storage="_Paramvalue" DbType="VarChar(50)" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="paramtype_id" Member="Paramtype_id" Storage="_Paramtype_id" DbType="Int" />
+      <Column Name="controltype_id" Member="Controltype_id" Storage="_Controltype_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_param_fv_paramtype" Member="Fv_paramtype" Storage="_Fv_paramtype" ThisKey="Paramtype_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_param_mobile" Member="Fv_param_mobile">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_param_mobile">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="paramvalue" Member="Paramvalue" Storage="_Paramvalue" DbType="VarChar(250)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_paramtype" Member="Fv_paramtype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_paramtype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="fvdispatch_sessionobject" Member="Fvdispatch_sessionobject" Storage="_Fvdispatch_sessionobject" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_param_fv_paramtype" Member="Fv_param" Storage="_Fv_param" ThisKey="Id" OtherKey="Paramtype_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_planner" Member="Fv_planner">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_planner">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="username" Member="Username" Storage="_Username" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="password" Member="Password" Storage="_Password" DbType="VarChar(50)" />
+      <Column Name="firstname" Member="Firstname" Storage="_Firstname" DbType="VarChar(50)" />
+      <Column Name="presurname" Member="Presurname" Storage="_Presurname" DbType="VarChar(20)" />
+      <Column Name="surname" Member="Surname" Storage="_Surname" DbType="VarChar(50)" />
+      <Column Name="initials" Member="Initials" Storage="_Initials" DbType="VarChar(10)" />
+      <Column Name="title" Member="Title" Storage="_Title" DbType="VarChar(50)" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(10)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="VarChar(50)" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="email" Member="Email" Storage="_Email" DbType="VarChar(50)" />
+      <Column Name="mobilephone" Member="Mobilephone" Storage="_Mobilephone" DbType="VarChar(15)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="plannergroup_id" Member="Plannergroup_id" Storage="_Plannergroup_id" DbType="Int" />
+      <Column Name="administrator" Member="Administrator" Storage="_Administrator" DbType="Int" />
+      <Column Name="profile_id" Member="Profile_id" Storage="_Profile_id" DbType="Int" />
+      <Column Name="language_id" Member="Language_id" Storage="_Language_id" DbType="VarChar(10)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_planner" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Planner_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_activitystatus_fv_planner" Member="Fv_activitystatus" Storage="_Fv_activitystatus" ThisKey="Id" OtherKey="Planner_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_planner_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_planner_fv_plannergroup" Member="Fv_plannergroup" Storage="_Fv_plannergroup" ThisKey="Plannergroup_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_planner_fv_profile" Member="Fv_profile" Storage="_Fv_profile" ThisKey="Profile_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_plannerregion_fv_planner" Member="Fv_plannerregion" Storage="_Fv_plannerregion" ThisKey="Id" OtherKey="Planner_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_serviceorder_fv_planner" Member="Fv_serviceorder" Storage="_Fv_serviceorder" ThisKey="Id" OtherKey="Planner_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_planner_login" Member="Fv_planner_login">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_planner_login">
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+      <Column Name="session_id" Member="Session_id" Storage="_Session_id" DbType="Int" />
+      <Column Name="changedt" Member="Changedt" Storage="_Changedt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_plannerconfiguration" Member="Fv_plannerconfiguration">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_plannerconfiguration">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" />
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="engineergroup_id" Member="Engineergroup_id" Storage="_Engineergroup_id" DbType="Int" />
+      <Column Name="gpb_request" Member="Gpb_request" Storage="_Gpb_request" DbType="VarChar(1000)" />
+      <Column Name="mapselection" Member="Mapselection" Storage="_Mapselection" DbType="VarChar(1000)" />
+      <Column Name="mapvariables" Member="Mapvariables" Storage="_Mapvariables" DbType="VarChar(1000)" />
+      <Column Name="changedt" Member="Changedt" Storage="_Changedt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_plannergroup" Member="Fv_plannergroup">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_plannergroup">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_planner_fv_plannergroup" Member="Fv_planner" Storage="_Fv_planner" ThisKey="Id" OtherKey="Plannergroup_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_plannergroup_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_plannerregion" Member="Fv_plannerregion">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_plannerregion">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_plannerregion_fv_planner" Member="Fv_planner" Storage="_Fv_planner" ThisKey="Planner_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_plannerregion_fv_region" Member="Fv_region" Storage="_Fv_region" ThisKey="Region_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_priority" Member="Fv_priority">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_priority">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_priority" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Priority_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_priority_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_problemcode" Member="Fv_problemcode">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_problemcode">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_problemcode" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Problemcode_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_debrief_fv_problemcode" Member="Fv_debrief" Storage="_Fv_debrief" ThisKey="Id" OtherKey="Problemcode_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_problemcode_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_productgroep" Member="Fv_productgroep">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_productgroep">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_productgroep" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Productgroep_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_profile" Member="Fv_profile">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_profile">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="customer_rights" Member="Customer_rights" Storage="_Customer_rights" DbType="Int" />
+      <Column Name="serviceobject_rights" Member="Serviceobject_rights" Storage="_Serviceobject_rights" DbType="Int" />
+      <Column Name="debrief_rights" Member="Debrief_rights" Storage="_Debrief_rights" DbType="Int" />
+      <Column Name="nonbillable_rights" Member="Nonbillable_rights" Storage="_Nonbillable_rights" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_planner_fv_profile" Member="Fv_planner" Storage="_Fv_planner" ThisKey="Id" OtherKey="Profile_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_profilerights_fv_profile" Member="Fv_profilerights" Storage="_Fv_profilerights" ThisKey="Id" OtherKey="Profile_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_profilerights" Member="Fv_profilerights">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_profilerights">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="profile_id" Member="Profile_id" Storage="_Profile_id" DbType="Int" />
+      <Column Name="activitystatusdirection_id" Member="Activitystatusdirection_id" Storage="_Activitystatusdirection_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="billable" Member="Billable" Storage="_Billable" DbType="Int" />
+      <Column Name="nonbillable" Member="Nonbillable" Storage="_Nonbillable" DbType="Int" />
+      <Association Name="FK_fv_profilerights_fv_activitystatusdirection" Member="Fv_activitystatusdirection" Storage="_Fv_activitystatusdirection" ThisKey="Activitystatusdirection_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_profilerights_fv_profile" Member="Fv_profile" Storage="_Fv_profile" ThisKey="Profile_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_pullmsg" Member="Fv_pullmsg">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_pullmsg">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" AutoSync="Always" />
+      <Column Name="insert_dt" Member="Insert_dt" Storage="_Insert_dt" DbType="DateTime" />
+      <Column Name="msgtype" Member="Msgtype" Storage="_Msgtype" DbType="VarChar(10)" />
+      <Column Name="destpath" Member="Destpath" Storage="_Destpath" DbType="VarChar(200)" />
+      <Column Name="param" Member="Param" Storage="_Param" DbType="VarChar(10)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_pullmsgengineer" Member="Fv_pullmsgengineer">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_pullmsgengineer">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" AutoSync="Always" />
+      <Column Name="pullmsg_id" Member="Pullmsg_id" Storage="_Pullmsg_id" DbType="Int NOT NULL" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int NOT NULL" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_radiostatus" Member="Fv_radiostatus">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_radiostatus">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_region" Member="Fv_region">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_region">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="from_zip" Member="From_zip" Storage="_From_zip" DbType="VarChar(50)" />
+      <Column Name="to_zip" Member="To_zip" Storage="_To_zip" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_region" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Region_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineer_fv_region" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Id" OtherKey="Def_region_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineerregion_fv_region" Member="Fv_engineerregion" Storage="_Fv_engineerregion" ThisKey="Id" OtherKey="Region_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_plannerregion_fv_region" Member="Fv_plannerregion" Storage="_Fv_plannerregion" ThisKey="Id" OtherKey="Region_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_serviceobject_fv_region" Member="Fv_serviceobject" Storage="_Fv_serviceobject" ThisKey="Id" OtherKey="Region_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_remark" Member="Fv_remark">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_remark">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="remark_category_id" Member="Remark_category_id" Storage="_Remark_category_id" DbType="Int" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Association Name="FK_fv_activityremark_fv_remark" Member="Fv_activityremark" Storage="_Fv_activityremark" ThisKey="Id" OtherKey="Remark_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_remark_category" Member="Fv_remark_category">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_remark_category">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Association Name="FK_fv_engineer_fv_remark_category" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Id" OtherKey="Def_remark_category_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_reports" Member="Fv_reports">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_reports">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="xmlsource" Member="Xmlsource" Storage="_Xmlsource" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int NOT NULL" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int NOT NULL" />
+      <Association Name="FK_fv_reports_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_sendfile" Member="Fv_sendfile">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_sendfile">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" AutoSync="Always" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+      <Column Name="sourceip" Member="Sourceip" Storage="_Sourceip" DbType="VarChar(50)" />
+      <Column Name="remotepath" Member="Remotepath" Storage="_Remotepath" DbType="VarChar(200)" />
+      <Column Name="localpath" Member="Localpath" Storage="_Localpath" DbType="VarChar(200)" />
+      <Column Name="filename" Member="Filename" Storage="_Filename" DbType="VarChar(200)" />
+      <Column Name="source" Member="Source" Storage="_Source" DbType="Image" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_sendfileengineer" Member="Fv_sendfileengineer">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_sendfileengineer">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" AutoSync="Always" />
+      <Column Name="sendfile_id" Member="Sendfile_id" Storage="_Sendfile_id" DbType="Int" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="returnstatus" Member="Returnstatus" Storage="_Returnstatus" DbType="VarChar(200)" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_senttoclient" Member="Fv_senttoclient">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_senttoclient">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int NOT NULL" />
+      <Column Name="xml" Member="Xml" Storage="_Xml" DbType="VarChar(5000) NOT NULL" CanBeNull="false" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int NOT NULL" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="groupid" Member="Groupid" Storage="_Groupid" DbType="UniqueIdentifier" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_serviceobject" Member="Fv_serviceobject">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_serviceobject">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="parent_id" Member="Parent_id" Storage="_Parent_id" DbType="Int" />
+      <Column Name="serialnumber" Member="Serialnumber" Storage="_Serialnumber" DbType="VarChar(50)" />
+      <Column Name="productiondt" Member="Productiondt" Storage="_Productiondt" DbType="DateTime" />
+      <Column Name="installationdt" Member="Installationdt" Storage="_Installationdt" DbType="DateTime" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="housenumber" Member="Housenumber" Storage="_Housenumber" DbType="VarChar(10)" />
+      <Column Name="housenumbertext" Member="Housenumbertext" Storage="_Housenumbertext" DbType="VarChar(10)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(10)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="community" Member="Community" Storage="_Community" DbType="VarChar(50)" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="country" Member="Country" Storage="_Country" DbType="VarChar(50)" />
+      <Column Name="phone" Member="Phone" Storage="_Phone" DbType="VarChar(15)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(15)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int" />
+      <Column Name="serviceobjecttype_id" Member="Serviceobjecttype_id" Storage="_Serviceobjecttype_id" DbType="Int" />
+      <Column Name="material_id" Member="Material_id" Storage="_Material_id" DbType="Int" />
+      <Column Name="ownertype_id" Member="Ownertype_id" Storage="_Ownertype_id" DbType="Int" />
+      <Column Name="region_id" Member="Region_id" Storage="_Region_id" DbType="Int" />
+      <Column Name="quantity" Member="Quantity" Storage="_Quantity" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_serviceobject" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Serviceobject_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_contract_fv_serviceobject" Member="Fv_contract" Storage="_Fv_contract" ThisKey="Id" OtherKey="Serviceobject_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_debrief_fv_serviceobject" Member="Fv_debrief" Storage="_Fv_debrief" ThisKey="Id" OtherKey="Serviceobject_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_engineer_eq_fv_serviceobject" Member="Fv_engineer_eq" Storage="_Fv_engineer_eq" ThisKey="Id" OtherKey="Serviceobject_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_serviceobject_fv_customer" Member="Fv_customer" Storage="_Fv_customer" ThisKey="Customer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_serviceobject_fv_material" Member="Fv_material" Storage="_Fv_material" ThisKey="Material_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_serviceobject_fv_ownertype" Member="Fv_ownertype" Storage="_Fv_ownertype" ThisKey="Ownertype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_serviceobject_fv_region" Member="Fv_region" Storage="_Fv_region" ThisKey="Region_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_serviceobject_fv_serviceobject" Member="Parent_" Storage="_Parent_" ThisKey="Parent_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_serviceobject_fv_serviceobject" Member="Fv_serviceobject_fv_serviceobject" Storage="_Fv_serviceobject_fv_serviceobject" ThisKey="Id" OtherKey="Parent_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_serviceobject_fv_serviceobjecttype" Member="Fv_serviceobjecttype" Storage="_Fv_serviceobjecttype" ThisKey="Serviceobjecttype_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_serviceobjecttype" Member="Fv_serviceobjecttype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_serviceobjecttype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="capability_id" Member="Capability_id" Storage="_Capability_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_serviceobject_fv_serviceobjecttype" Member="Fv_serviceobject" Storage="_Fv_serviceobject" ThisKey="Id" OtherKey="Serviceobjecttype_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_set_fv_serviceobjecttype" Member="Fv_set" Storage="_Fv_set" ThisKey="Id" OtherKey="Serviceobjecttype_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_serviceorder" Member="Fv_serviceorder">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_serviceorder">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="orderdt" Member="Orderdt" Storage="_Orderdt" DbType="DateTime" />
+      <Column Name="verifydt" Member="Verifydt" Storage="_Verifydt" DbType="DateTime" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="mainengineer_id" Member="Mainengineer_id" Storage="_Mainengineer_id" DbType="Int" />
+      <Column Name="planner_id" Member="Planner_id" Storage="_Planner_id" DbType="Int" />
+      <Column Name="customer_id" Member="Customer_id" Storage="_Customer_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="samenvatting" Member="Samenvatting" Storage="_Samenvatting" DbType="VarChar(4096)" />
+      <Association Name="FK_fv_activity_fv_serviceorder" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Serviceorder_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_history_fv_serviceorder" Member="Fv_history" Storage="_Fv_history" ThisKey="Id" OtherKey="Serviceorder_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_materialmutation_fv_serviceorder" Member="Fv_materialmutation" Storage="_Fv_materialmutation" ThisKey="Id" OtherKey="Serviceorder_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_serviceorder_fv_customer" Member="Fv_customer" Storage="_Fv_customer" ThisKey="Customer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_serviceorder_fv_engineer" Member="Fv_engineer" Storage="_Fv_engineer" ThisKey="Mainengineer_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_serviceorder_fv_planner" Member="Fv_planner" Storage="_Fv_planner" ThisKey="Planner_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_set" Member="Fv_set">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_set">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="activitytype_id" Member="Activitytype_id" Storage="_Activitytype_id" DbType="Int" />
+      <Column Name="serviceobjecttype_id" Member="Serviceobjecttype_id" Storage="_Serviceobjecttype_id" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_set_fv_activitytype" Member="Fv_activitytype" Storage="_Fv_activitytype" ThisKey="Activitytype_id" OtherKey="Id" IsForeignKey="true" />
+      <Association Name="FK_fv_set_fv_serviceobjecttype" Member="Fv_serviceobjecttype" Storage="_Fv_serviceobjecttype" ThisKey="Serviceobjecttype_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_solutioncode" Member="Fv_solutioncode">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_solutioncode">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_activity_fv_solutioncode" Member="Fv_activity" Storage="_Fv_activity" ThisKey="Id" OtherKey="Solutioncode_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_debrief_fv_solutioncode" Member="Fv_debrief" Storage="_Fv_debrief" ThisKey="Id" OtherKey="Solutioncode_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_solutioncode_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_supplier" Member="Fv_supplier">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_supplier">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="straat" Member="Straat" Storage="_Straat" DbType="VarChar(50)" />
+      <Column Name="huisnummer" Member="Huisnummer" Storage="_Huisnummer" DbType="VarChar(50)" />
+      <Column Name="postcode" Member="Postcode" Storage="_Postcode" DbType="VarChar(50)" />
+      <Column Name="plaats" Member="Plaats" Storage="_Plaats" DbType="VarChar(50)" />
+      <Column Name="landcode" Member="Landcode" Storage="_Landcode" DbType="VarChar(50)" />
+      <Column Name="telefoon" Member="Telefoon" Storage="_Telefoon" DbType="VarChar(50)" />
+      <Column Name="fax" Member="Fax" Storage="_Fax" DbType="VarChar(50)" />
+      <Column Name="gabicode" Member="Gabicode" Storage="_Gabicode" DbType="VarChar(50)" />
+      <Association Name="FK_fv_material_fv_supplier" Member="Fv_material" Storage="_Fv_material" ThisKey="Id" OtherKey="Supplier_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_materialgroup_fv_supplier" Member="Fv_materialgroup" Storage="_Fv_materialgroup" ThisKey="Id" OtherKey="Supplier_id" DeleteRule="NO ACTION" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_systemadmin" Member="Fv_systemadmin">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_systemadmin">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="systemname" Member="Systemname" Storage="_Systemname" DbType="VarChar(50)" />
+      <Column Name="systemalias" Member="Systemalias" Storage="_Systemalias" DbType="VarChar(50)" />
+      <Column Name="adminpage" Member="Adminpage" Storage="_Adminpage" DbType="VarChar(150)" />
+      <Column Name="change_item" Member="Change_item" Storage="_Change_item" DbType="Int" />
+      <Column Name="new_item" Member="New_item" Storage="_New_item" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_tableadmin" Member="Fv_tableadmin">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_tableadmin">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="tablename" Member="Tablename" Storage="_Tablename" DbType="VarChar(50)" />
+      <Column Name="tablealias" Member="Tablealias" Storage="_Tablealias" DbType="VarChar(50)" />
+      <Column Name="adminpage" Member="Adminpage" Storage="_Adminpage" DbType="VarChar(50)" />
+      <Column Name="change_item" Member="Change_item" Storage="_Change_item" DbType="Int" />
+      <Column Name="new_item" Member="New_item" Storage="_New_item" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_temp_actids" Member="Fv_temp_actids">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_temp_actids">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="activity_id" Member="Activity_id" Storage="_Activity_id" DbType="UniqueIdentifier" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_tmp_bestelling" Member="Fv_tmp_bestelling">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_tmp_bestelling">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="leveranciernummer" Member="Leveranciernummer" Storage="_Leveranciernummer" DbType="VarChar(50)" />
+      <Column Name="SOnummer" Member="SOnummer" Storage="_SOnummer" DbType="VarChar(50)" />
+      <Column Name="werkbon" Member="Werkbon" Storage="_Werkbon" DbType="Int" />
+      <Column Name="balie" Member="Balie" Storage="_Balie" DbType="Int" />
+      <Column Name="straat" Member="Straat" Storage="_Straat" DbType="VarChar(50)" />
+      <Column Name="naam" Member="Naam" Storage="_Naam" DbType="VarChar(50)" />
+      <Column Name="naam2" Member="Naam2" Storage="_Naam2" DbType="VarChar(50)" />
+      <Column Name="huisnummer" Member="Huisnummer" Storage="_Huisnummer" DbType="VarChar(50)" />
+      <Column Name="postcode" Member="Postcode" Storage="_Postcode" DbType="VarChar(50)" />
+      <Column Name="plaats" Member="Plaats" Storage="_Plaats" DbType="VarChar(50)" />
+      <Column Name="land" Member="Land" Storage="_Land" DbType="VarChar(50)" />
+      <Column Name="onderaanneming" Member="Onderaanneming" Storage="_Onderaanneming" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_tmp_bestellingregel" Member="Fv_tmp_bestellingregel">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_tmp_bestellingregel">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="bestelling_id" Member="Bestelling_id" Storage="_Bestelling_id" DbType="UniqueIdentifier" />
+      <Column Name="artikelnummer" Member="Artikelnummer" Storage="_Artikelnummer" DbType="VarChar(50)" />
+      <Column Name="omschrijving" Member="Omschrijving" Storage="_Omschrijving" DbType="VarChar(50)" />
+      <Column Name="aantal" Member="Aantal" Storage="_Aantal" DbType="Real" />
+      <Column Name="prijs" Member="Prijs" Storage="_Prijs" DbType="Real" />
+      <Column Name="type" Member="Type" Storage="_Type" DbType="VarChar(1)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_tmp_bezorgadres" Member="Fv_tmp_bezorgadres">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_tmp_bezorgadres">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="name" Member="Name" Storage="_Name" DbType="VarChar(50)" />
+      <Column Name="name_2" Member="Name_2" Storage="_Name_2" DbType="VarChar(50)" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(50)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+      <Column Name="txackdt" Member="Txackdt" Storage="_Txackdt" DbType="DateTime" />
+      <Column Name="insertdt" Member="Insertdt" Storage="_Insertdt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_tmp_orderrequest" Member="Fv_tmp_orderrequest">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_tmp_orderrequest">
+      <Column Name="sonummer" Member="Sonummer" Storage="_Sonummer" DbType="VarChar(50) NOT NULL" CanBeNull="false" IsPrimaryKey="true" />
+      <Column Name="omschrijving" Member="Omschrijving" Storage="_Omschrijving" DbType="VarChar(50)" />
+      <Column Name="equipmentnummer" Member="Equipmentnummer" Storage="_Equipmentnummer" DbType="VarChar(50)" />
+      <Column Name="basisstart" Member="Basisstart" Storage="_Basisstart" DbType="VarChar(50)" />
+      <Column Name="basiseind" Member="Basiseind" Storage="_Basiseind" DbType="VarChar(50)" />
+      <Column Name="functieplaats" Member="Functieplaats" Storage="_Functieplaats" DbType="VarChar(50)" />
+      <Column Name="selected" Member="Selected" Storage="_Selected" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_tmp_purchaseorder" Member="Fv_tmp_purchaseorder">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_tmp_purchaseorder">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="purchaseorder" Member="Purchaseorder" Storage="_Purchaseorder" DbType="VarChar(50)" />
+      <Column Name="leveranciernummer" Member="Leveranciernummer" Storage="_Leveranciernummer" DbType="VarChar(50)" />
+      <Column Name="leveranciernaam" Member="Leveranciernaam" Storage="_Leveranciernaam" DbType="VarChar(50)" />
+      <Column Name="orderdt" Member="Orderdt" Storage="_Orderdt" DbType="DateTime" />
+      <Column Name="selected" Member="Selected" Storage="_Selected" DbType="Int" />
+      <Column Name="besteller" Member="Besteller" Storage="_Besteller" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_tmp_purchaseorderline" Member="Fv_tmp_purchaseorderline">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_tmp_purchaseorderline">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" IsPrimaryKey="true" />
+      <Column Name="purchaseorderpositie" Member="Purchaseorderpositie" Storage="_Purchaseorderpositie" DbType="VarChar(50)" />
+      <Column Name="purchaseorder" Member="Purchaseorder" Storage="_Purchaseorder" DbType="VarChar(50)" />
+      <Column Name="positie" Member="Positie" Storage="_Positie" DbType="VarChar(50)" />
+      <Column Name="artikelnummer" Member="Artikelnummer" Storage="_Artikelnummer" DbType="VarChar(50)" />
+      <Column Name="omschrijving" Member="Omschrijving" Storage="_Omschrijving" DbType="VarChar(50)" />
+      <Column Name="BE_aantal" Member="BE_aantal" Storage="_BE_aantal" DbType="Real" />
+      <Column Name="BE_datum" Member="BE_datum" Storage="_BE_datum" DbType="DateTime" />
+      <Column Name="BE_waarde" Member="BE_waarde" Storage="_BE_waarde" DbType="Real" />
+      <Column Name="GO_aantal" Member="GO_aantal" Storage="_GO_aantal" DbType="Real" />
+      <Column Name="GO_datum" Member="GO_datum" Storage="_GO_datum" DbType="DateTime" />
+      <Column Name="GO_waarde" Member="GO_waarde" Storage="_GO_waarde" DbType="Real" />
+      <Column Name="FA_aantal" Member="FA_aantal" Storage="_FA_aantal" DbType="Real" />
+      <Column Name="FA_waarde" Member="FA_waarde" Storage="_FA_waarde" DbType="Real" />
+      <Column Name="goederengroep" Member="Goederengroep" Storage="_Goederengroep" DbType="VarChar(50)" />
+      <Column Name="boeknummer" Member="Boeknummer" Storage="_Boeknummer" DbType="VarChar(50)" />
+      <Column Name="boekdatum" Member="Boekdatum" Storage="_Boekdatum" DbType="DateTime" />
+      <Column Name="artikelsoort" Member="Artikelsoort" Storage="_Artikelsoort" DbType="VarChar(1)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_unit" Member="Fv_unit">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_unit">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="symbol" Member="Symbol" Storage="_Symbol" DbType="VarChar(15)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_material_fv_unit" Member="Fv_material" Storage="_Fv_material" ThisKey="Id" OtherKey="Unit_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_unit_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_version" Member="Fv_version">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_version">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" AutoSync="Always" />
+      <Column Name="date" Member="Date" Storage="_Date" DbType="DateTime NOT NULL" />
+      <Column Name="version" Member="Version" Storage="_Version" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_version_clientdb" Member="Fv_version_clientdb">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_version_clientdb">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" />
+      <Column Name="clientdb_version" Member="Clientdb_version" Storage="_Clientdb_version" DbType="NVarChar(100)" />
+      <Column Name="clientdb_date" Member="Clientdb_date" Storage="_Clientdb_date" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_versioninfo" Member="Fv_versioninfo">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_versioninfo">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" />
+      <Column Name="itemname" Member="Itemname" Storage="_Itemname" DbType="NVarChar(100)" />
+      <Column Name="action" Member="Action" Storage="_Action" DbType="Int NOT NULL" />
+      <Column Name="pathname" Member="Pathname" Storage="_Pathname" DbType="NVarChar(100)" />
+      <Column Name="date" Member="Date" Storage="_Date" DbType="DateTime" />
+      <Column Name="itemdate" Member="Itemdate" Storage="_Itemdate" DbType="DateTime" />
+      <Column Name="xmldate" Member="Xmldate" Storage="_Xmldate" DbType="DateTime" />
+      <Column Name="version" Member="Version" Storage="_Version" DbType="NVarChar(100)" />
+      <Column Name="size" Member="Size" Storage="_Size" DbType="BigInt" />
+      <Column Name="pda_id" Member="Pda_id" Storage="_Pda_id" DbType="NVarChar(100)" />
+      <Column Name="engineer_id" Member="Engineer_id" Storage="_Engineer_id" DbType="Int" />
+      <Column Name="mem_storage" Member="Mem_storage" Storage="_Mem_storage" DbType="BigInt" />
+      <Column Name="mem_program" Member="Mem_program" Storage="_Mem_program" DbType="BigInt" />
+      <Column Name="mem_disk" Member="Mem_disk" Storage="_Mem_disk" DbType="BigInt" />
+      <Column Name="os_version_pda" Member="Os_version_pda" Storage="_Os_version_pda" DbType="NVarChar(100)" />
+      <Column Name="os_version_pc" Member="Os_version_pc" Storage="_Os_version_pc" DbType="NVarChar(100)" />
+      <Column Name="master_id" Member="Master_id" Storage="_Master_id" DbType="UniqueIdentifier" />
+      <Column Name="clientdb_version" Member="Clientdb_version" Storage="_Clientdb_version" DbType="NVarChar(100)" />
+      <Column Name="clientdb_date" Member="Clientdb_date" Storage="_Clientdb_date" DbType="DateTime" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_versioninfo_actiontype" Member="Fv_versioninfo_actiontype">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_versioninfo_actiontype">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_versioninfo_master" Member="Fv_versioninfo_master">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_versioninfo_master">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="UniqueIdentifier NOT NULL" />
+      <Column Name="exporteddt" Member="Exporteddt" Storage="_Exporteddt" DbType="DateTime" />
+      <Column Name="exportfilename" Member="Exportfilename" Storage="_Exportfilename" DbType="NVarChar(100)" />
+      <Column Name="exported" Member="Exported" Storage="_Exported" DbType="Int" />
+      <Column Name="radiostatus_id" Member="Radiostatus_id" Storage="_Radiostatus_id" DbType="Int" />
+      <Column Name="txstartdt" Member="Txstartdt" Storage="_Txstartdt" DbType="DateTime" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_versioninforeq" Member="Fv_versioninforeq">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_versioninforeq">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" />
+      <Column Name="itemname" Member="Itemname" Storage="_Itemname" DbType="NVarChar(100)" />
+      <Column Name="pathname" Member="Pathname" Storage="_Pathname" DbType="NVarChar(100)" />
+      <Column Name="action" Member="Action" Storage="_Action" DbType="Int" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_vervolgactie" Member="Fv_vervolgactie">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_vervolgactie">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_warranty" Member="Fv_warranty">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_warranty">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="external_id" Member="External_id" Storage="_External_id" DbType="VarChar(50)" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(255)" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Association Name="FK_fv_materialmutation_fv_warranty" Member="Fv_materialmutation" Storage="_Fv_materialmutation" ThisKey="Id" OtherKey="Warranty_id" DeleteRule="NO ACTION" />
+      <Association Name="FK_fv_warranty_fv_organisation" Member="Fv_organisation" Storage="_Fv_organisation" ThisKey="Organisation_id" OtherKey="Id" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_weekdagen" Member="Fv_weekdagen">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_weekdagen">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="dagnaam" Member="Dagnaam" Storage="_Dagnaam" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLerror" Member="Fv_XMLerror">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_XMLerror">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" AutoSync="OnInsert" />
+      <Column Name="errornumber" Member="Errornumber" Storage="_Errornumber" DbType="VarChar(50)" />
+      <Column Name="component" Member="Component" Storage="_Component" DbType="VarChar(50)" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="Text" UpdateCheck="Never" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLexportattributes" Member="Fv_XMLexportattributes">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_XMLexportattributes">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="XMLMessageName" Member="XMLMessageName" Storage="_XMLMessageName" DbType="NVarChar(50)" />
+      <Column Name="XMLattribName" Member="XMLattribName" Storage="_XMLattribName" DbType="NVarChar(50)" />
+      <Column Name="XMLattribValue" Member="XMLattribValue" Storage="_XMLattribValue" DbType="NVarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLexportdefinition" Member="Fv_XMLexportdefinition">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_XMLexportdefinition">
+      <Column Name="Id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="FileName" Member="FileName" Storage="_FileName" DbType="VarChar(50)" />
+      <Column Name="HierarchyLevel" Member="HierarchyLevel" Storage="_HierarchyLevel" DbType="Int" />
+      <Column Name="ParentListTag" Member="ParentListTag" Storage="_ParentListTag" DbType="VarChar(50)" />
+      <Column Name="ListTag" Member="ListTag" Storage="_ListTag" DbType="VarChar(50)" />
+      <Column Name="ParentTag" Member="ParentTag" Storage="_ParentTag" DbType="VarChar(50)" />
+      <Column Name="Tag" Member="Tag" Storage="_Tag" DbType="VarChar(50)" />
+      <Column Name="FV_SourceTable" Member="FV_SourceTable" Storage="_FV_SourceTable" DbType="VarChar(50)" />
+      <Column Name="FV_SourceField" Member="FV_SourceField" Storage="_FV_SourceField" DbType="VarChar(50)" />
+      <Column Name="Alias" Member="Alias" Storage="_Alias" DbType="VarChar(50)" />
+      <Column Name="Conversion" Member="Conversion" Storage="_Conversion" DbType="VarChar(50)" />
+      <Column Name="Remarks" Member="Remarks" Storage="_Remarks" DbType="VarChar(255)" />
+      <Column Name="BackofficeTableField" Member="BackofficeTableField" Storage="_BackofficeTableField" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLexportqueries" Member="Fv_XMLexportqueries">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_XMLexportqueries">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Decimal(18,0) NOT NULL" IsPrimaryKey="true" />
+      <Column Name="IsChildOf" Member="IsChildOf" Storage="_IsChildOf" DbType="Char(50)" />
+      <Column Name="ListTag" Member="ListTag" Storage="_ListTag" DbType="Char(50)" />
+      <Column Name="Tag" Member="Tag" Storage="_Tag" DbType="Char(50)" />
+      <Column Name="Query" Member="Query" Storage="_Query" DbType="Char(3000)" />
+      <Column Name="ExportTable" Member="ExportTable" Storage="_ExportTable" DbType="Char(50)" />
+      <Column Name="MainKey" Member="MainKey" Storage="_MainKey" DbType="Char(50)" />
+      <Column Name="Stepnumber" Member="Stepnumber" Storage="_Stepnumber" DbType="Int NOT NULL" />
+      <Column Name="isactive" Member="Isactive" Storage="_Isactive" DbType="Int" />
+      <Column Name="ticker" Member="Ticker" Storage="_Ticker" DbType="Int" />
+      <Column Name="Filename" Member="Filename" Storage="_Filename" DbType="VarChar(50)" />
+      <Column Name="Lookupkey" Member="Lookupkey" Storage="_Lookupkey" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLgatewayini" Member="Fv_XMLgatewayini">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_XMLgatewayini">
+      <Column Name="ID" Member="ID" Storage="_ID" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="XMLgatewayID" Member="XMLgatewayID" Storage="_XMLgatewayID" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int NOT NULL" />
+      <Column Name="XMLServiceOrderParentTag" Member="XMLServiceOrderParentTag" Storage="_XMLServiceOrderParentTag" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="XMLAdvicedMaterialsParentTag" Member="XMLAdvicedMaterialsParentTag" Storage="_XMLAdvicedMaterialsParentTag" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="XMLImportMainTag" Member="XMLImportMainTag" Storage="_XMLImportMainTag" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="XMLimportDir" Member="XMLimportDir" Storage="_XMLimportDir" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="XMLexportDir" Member="XMLexportDir" Storage="_XMLexportDir" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="XMLfileCreateDelay" Member="XMLfileCreateDelay" Storage="_XMLfileCreateDelay" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="GatewayInUse" Member="GatewayInUse" Storage="_GatewayInUse" DbType="Int NOT NULL" />
+      <Column Name="ExportInterval" Member="ExportInterval" Storage="_ExportInterval" DbType="Int NOT NULL" />
+      <Column Name="ImportInterval" Member="ImportInterval" Storage="_ImportInterval" DbType="Int NOT NULL" />
+      <Column Name="KeepExportDays" Member="KeepExportDays" Storage="_KeepExportDays" DbType="Int NOT NULL" />
+      <Column Name="KeepImportDays" Member="KeepImportDays" Storage="_KeepImportDays" DbType="Int NOT NULL" />
+      <Column Name="EmptyTags" Member="EmptyTags" Storage="_EmptyTags" DbType="Int" />
+      <Column Name="UseLocal" Member="UseLocal" Storage="_UseLocal" DbType="Int" />
+      <Column Name="start_export_time" Member="Start_export_time" Storage="_Start_export_time" DbType="DateTime" />
+      <Column Name="stop_export_time" Member="Stop_export_time" Storage="_Stop_export_time" DbType="DateTime" />
+      <Column Name="start_import_time" Member="Start_import_time" Storage="_Start_import_time" DbType="DateTime" />
+      <Column Name="stop_import_time" Member="Stop_import_time" Storage="_Stop_import_time" DbType="DateTime" />
+      <Column Name="VersionTag" Member="VersionTag" Storage="_VersionTag" DbType="Int" />
+      <Column Name="ImportClearEmptyTags" Member="ImportClearEmptyTags" Storage="_ImportClearEmptyTags" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_XMLimportdefinition" Member="Fv_XMLimportdefinition">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_XMLimportdefinition">
+      <Column Name="Id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="XML_Parent_Tag" Member="XML_Parent_Tag" Storage="_XML_Parent_Tag" DbType="VarChar(50)" />
+      <Column Name="XML_Tag" Member="XML_Tag" Storage="_XML_Tag" DbType="VarChar(255)" />
+      <Column Name="Destination_Table" Member="Destination_Table" Storage="_Destination_Table" DbType="VarChar(128)" />
+      <Column Name="Destination_Field" Member="Destination_Field" Storage="_Destination_Field" DbType="VarChar(128)" />
+      <Column Name="LookUpTable" Member="LookUpTable" Storage="_LookUpTable" DbType="VarChar(50)" />
+      <Column Name="Conversion" Member="Conversion" Storage="_Conversion" DbType="VarChar(50)" />
+      <Column Name="MandatoryExternalID" Member="MandatoryExternalID" Storage="_MandatoryExternalID" DbType="Int" />
+      <Column Name="XML_DefaultValue" Member="XML_DefaultValue" Storage="_XML_DefaultValue" DbType="VarChar(50)" />
+      <Column Name="organisation_id" Member="Organisation_id" Storage="_Organisation_id" DbType="Int" />
+      <Column Name="Mandatory" Member="Mandatory" Storage="_Mandatory" DbType="Int" />
+      <Column Name="ClearEmptyTags" Member="ClearEmptyTags" Storage="_ClearEmptyTags" DbType="Int" />
+      <Column Name="remarks" Member="Remarks" Storage="_Remarks" DbType="VarChar(255)" />
+      <Column Name="XML_ID" Member="XML_ID" Storage="_XML_ID" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.fv_zip" Member="Fv_zip">
+    <Type Name="StrippedXMLToSQL.Worksphere.Fv_zip">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" IsPrimaryKey="true" />
+      <Column Name="zip" Member="Zip" Storage="_Zip" DbType="VarChar(50)" />
+      <Column Name="municipal" Member="Municipal" Storage="_Municipal" DbType="VarChar(50)" />
+      <Column Name="muni" Member="Muni" Storage="_Muni" DbType="Int" />
+      <Column Name="state" Member="State" Storage="_State" DbType="VarChar(50)" />
+      <Column Name="city" Member="City" Storage="_City" DbType="VarChar(50)" />
+      <Column Name="x" Member="X" Storage="_X" DbType="Int" />
+      <Column Name="y" Member="Y" Storage="_Y" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.rep_flow" Member="Rep_flow">
+    <Type Name="StrippedXMLToSQL.Worksphere.Rep_flow">
+      <Column Name="id" Member="Id" Storage="_Id" DbType="Int NOT NULL" />
+      <Column Name="description" Member="Description" Storage="_Description" DbType="VarChar(50)" />
+      <Column Name="configuration_id" Member="Configuration_id" Storage="_Configuration_id" DbType="Int" />
+      <Column Name="start_step_id" Member="Start_step_id" Storage="_Start_step_id" DbType="Int" />
+      <Column Name="notes" Member="Notes" Storage="_Notes" DbType="VarChar(500)" />
+      <Column Name="disablebrowse" Member="Disablebrowse" Storage="_Disablebrowse" DbType="Int" />
+      <Column Name="senttoclient" Member="Senttoclient" Storage="_Senttoclient" DbType="Int" />
+    </Type>
+  </Table>
+  <Table Name="dbo.temp_ferry" Member="Temp_ferry">
+    <Type Name="StrippedXMLToSQL.Worksphere.Temp_ferry">
+      <Column Name="Serviceorder" Member="Serviceorder" Storage="_Serviceorder" DbType="NChar(10)" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TempTwan" Member="TempTwan">
+    <Type Name="StrippedXMLToSQL.Worksphere.TempTwan">
+      <Column Name="SapOrderNumber" Member="SapOrderNumber" Storage="_SapOrderNumber" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Productgroep" Member="Productgroep" Storage="_Productgroep" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TempWerkbon" Member="TempWerkbon">
+    <Type Name="StrippedXMLToSQL.Worksphere.TempWerkbon">
+      <Column Name="ServiceOrder" Member="ServiceOrder" Storage="_ServiceOrder" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Werkbon" Member="Werkbon" Storage="_Werkbon" DbType="Int NOT NULL" />
+      <Column Name="Street" Member="Street" Storage="_Street" DbType="VarChar(50)" />
+      <Column Name="Housenum" Member="Housenum" Storage="_Housenum" DbType="VarChar(10)" />
+      <Column Name="Zip" Member="Zip" Storage="_Zip" DbType="VarChar(50)" />
+      <Column Name="City" Member="City" Storage="_City" DbType="VarChar(50)" />
+    </Type>
+  </Table>
+</Database>
